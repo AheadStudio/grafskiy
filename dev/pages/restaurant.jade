@@ -1,0 +1,255 @@
+extends ../templates/base.jade
+
+block content
+	div(class="page-inner page-inner--w1")
+		div(class="page-heading")
+			h1(class="h1") Ресторан
+
+	div(class="page-inner page-inner--w1 page-inner--promo")
+		div(class="promo promo--nodescr")
+			div(class="promo-items", data-margin="0", data-autoplay="5000" data-ratio="1.75/1", data-fit="cover", data-shadows="false", data-transitionduration="700", data-arrows="false", data-nav="false", data-width="100%", data-loop="true")
+				div(class="promo-item", data-img="../dummy/promo/7.png") 
+				div(class="promo-item", data-img="../dummy/promo/7.png") 
+				div(class="promo-item", data-img="../dummy/promo/7.png") 
+			div(class="promo-nav")
+				span(class="promo-nav-item promo-nav-item--prev")
+					include ../../prod/svg/larr.svg
+				span(class="promo-nav-counter")
+					span(class="promo-nav-counter-current") 1
+					span(class="promo-nav-counter-divider") 
+					span(class="promo-nav-counter-all") &nbsp;
+				span(class="promo-nav-item promo-nav-item--next")
+					include ../../prod/svg/rarr.svg
+
+	div(class="page-inner page-inner--w2")
+		div(class="page-text")
+			cite(class="big") Ресторан «Графский парк» в совершенстве владеет искусством гостеприимства, ведь сытые и довольные гости – непременная составляющая дворянского быта.
+
+	div(class="page-inner page-inner--w2")
+		div(class="page-text")
+			div(class="columns")
+				p Космополитичная кухня ресторана охватывает весь мир в его вкусовом  разнообразии и основывается на отборных местных продуктах. Восточный хумус шеф-повар подает со свининой тонкацу в японском стиле или со средиземно- морскими морепродуктами. Из донского судака готовит перуанское севиче, а в уху добавляет азиатские специи для насыщенности и аромата.
+				p К разнообразным закускам подадут хрустящий хлеб из собственной пекарни. Гордость ресторана – шкаф для сухого вызревания мяса, а собственная коптильня и парилья выгодно подчеркнут вкус мяса, рыбы и дичи. Раскрыть все нюансы блюд поможет обширная коллекция вин Старого и Нового Света.
+
+
+
+	div(class="page-inner page-inner--w2")
+		div(class="person")
+			div(class="person-photo-holder")
+				img(src="../dummy/cok.png")
+			div(class="person-info")
+				div(class="person-name") Алексей Краковский
+				div(class="person-post")
+					| бренд-шеф ресторана «Графский парк» 
+				div(class="person-text page-text") Работал в ресторанах Израиля, Казахстана, Украины, Англии и Голландии. Виртуозно миксует хиты ближневосточной, азиатской, средиземноморской и русской кухни, превнося в национальные блюда разных стран собственный кулинарный почерк. Это вкусная и здоровая еда, которая при этом выглядит как произведение искусства.
+
+	div(class="page-inner page-inner--w1")
+		div(class="page-text")
+			cite(class="small") Космополитичная кухня ресторана охватывает весь мир в его вкусовом разнообразии
+
+
+	div(class="slider slider--menu")
+		div(class="slider-title h2") Меню
+		div(class="slider-items-holder")
+			div(class="slider-items", data-width="100%", data-ratio="3.8/1", data-fit="contain", data-shadows="false", data-nav="false", data-arrows="false", data-margin="150", data-transitionduration="700", data-glimpse="30%", data-loop="true")
+				div(class="slider-item")
+					img(src="../dummy/menu.png", class="slider-item-photo")
+					div(class="slider-item-info")
+						div(class="slider-item-title h1") Суп с мидиями и рубцом
+						div(class="slider-item-description page-text") Суп из трески и помидоров подается в гренками.
+				div(class="slider-item")
+					img(src="../dummy/menu.png", class="slider-item-photo")
+					div(class="slider-item-info")
+						div(class="slider-item-title h1") Суп с мидиями и рубцом
+						div(class="slider-item-description page-text") Суп из трески и помидоров подается в гренками.
+				div(class="slider-item")
+					img(src="../dummy/menu.png", class="slider-item-photo")
+					div(class="slider-item-info")
+						div(class="slider-item-title h1") Суп с мидиями и рубцом
+						div(class="slider-item-description page-text") Суп из трески и помидоров подается в гренками.
+			div(class="slider-items-controls")
+				div(class="slider-items-arr slider-items-arr--left")
+					include ../../prod/svg/larr.svg
+				div(class="slider-items-arr slider-items-arr--right")
+					include ../../prod/svg/rarr.svg
+
+	div(class="page-inner page-inner--w1")
+		div(class="restaurant-features")
+			div(class="restaurant-feature-item")
+				span(class="restaurant-feature-item-icon")
+					include ../../prod/svg/r1.svg
+				span(class="restaurant-feature-item-title") Настоящий дровяной камин
+			div(class="restaurant-feature-item")
+				span(class="restaurant-feature-item-icon")
+					include ../../prod/svg/r2.svg
+				span(class="restaurant-feature-item-title") Большая винотека (более 400 наименований)
+			div(class="restaurant-feature-item")
+				span(class="restaurant-feature-item-icon")
+					include ../../prod/svg/r3.svg
+				span(class="restaurant-feature-item-title") Авторская русская кухня
+			div(class="restaurant-feature-item")
+				span(class="restaurant-feature-item-icon")
+					include ../../prod/svg/r4.svg
+				span(class="restaurant-feature-item-title") Шампанерия и летний устричный бар
+
+	div(class="page-inner page-inner--w1")
+		div(class="breakfast")
+			div(class="breakfast-inner")
+				div(class="breakfast-photo")
+				div(class="breakfast-info")
+					div(class="breakfast-info-photo-holder")
+						img(src="../dummy/br2.png")
+					div(class="breakfast-title h1") Завтрак
+					div(class="breakfast-description page-text")
+						p Шведский завтрак для гостей графского особняка подается до 11:00. Если любите спать допоздна, горячий завтрак вам подадут в любое время.
+						p Завтрак подается в Аванзале.
+
+	div(class="page-inner page-inner--w2")
+		div(class="menu menu--centered")
+			a(href="#", class="menu-item menu-item--block")
+				div(class="menu-item-icon")
+					include ../../prod/svg/m1.svg
+				div(class="menu-item-inner")
+					div(class="menu-item-title") Основное меню
+					div(class="menu-item-fileinfo") pdf, 0.07 мб
+
+			a(href="#", class="menu-item menu-item--block")
+				div(class="menu-item-icon")
+					include ../../prod/svg/m2.svg
+				div(class="menu-item-inner")
+					div(class="menu-item-title") Меню завраков
+					div(class="menu-item-fileinfo") pdf, 0.34 мб
+
+			a(href="#", class="menu-item menu-item--block")
+				div(class="menu-item-icon")
+					include ../../prod/svg/m3.svg
+				div(class="menu-item-inner")
+					div(class="menu-item-title") Детское меню
+					div(class="menu-item-fileinfo") pdf, 0.34 мб
+
+			a(href="#", class="menu-item menu-item--block")
+				div(class="menu-item-icon")
+					include ../../prod/svg/m4.svg
+				div(class="menu-item-inner")
+					div(class="menu-item-title") Банкетное меню
+					div(class="menu-item-fileinfo") pdf, 0.34 мб
+
+			a(href="#", class="menu-item menu-item--block")
+				div(class="menu-item-icon")
+					include ../../prod/svg/m5.svg
+				div(class="menu-item-inner")
+					div(class="menu-item-title") Летняя площадка
+					div(class="menu-item-fileinfo") pdf, 0.07 мб
+
+			a(href="#", class="menu-item menu-item--block")
+				div(class="menu-item-icon")
+					include ../../prod/svg/m6.svg
+				div(class="menu-item-inner")
+					div(class="menu-item-title") Барная карта
+					div(class="menu-item-fileinfo") pdf, 0.34 мб
+
+			a(href="#", class="menu-item menu-item--block")
+				div(class="menu-item-icon")
+					include ../../prod/svg/m7.svg
+				div(class="menu-item-inner")
+					div(class="menu-item-title") Винная карта
+					div(class="menu-item-fileinfo") pdf, 0.34 мб
+
+	div(class="page-inner page-inner--w2")
+		div(class="page-text")
+			cite(class="big") В ресторанном комплексе  «Графский парк» три великолепных зала для разных поводов и настроения.
+
+	div(class="page-inner page-inner--w1")
+		div(class="services")
+			div(class="services-items")
+				div(class="service-item service-item--left")
+					div(class="service-item-info")
+						div(class="service-item-info-inner")
+							div(class="service-item-name h1") Аванзал
+							div(class="service-item-description")
+								div(class="page-text")
+									p Уютный зал с видом на парк и бассейн идеален для солнечный завтраков, деловых обедов и винных ужинов.Здесь приятно пить кофе, обсуждать дела и думать о хорошем.
+									dl
+										dt посадочных мест:  
+										dd 40
+										dt сезон: 
+										dd круглогодично
+					div(class="service-item-photo-holder", style="background-image: url(../dummy/services/r1.png)")
+
+				div(class="service-item service-item--right")
+					div(class="service-item-info")
+						div(class="service-item-info-inner")
+							div(class="service-item-name h1") Каминный зал
+							div(class="service-item-description")
+								div(class="page-text")
+									p Подобное пространство можно встретить в аристократических имениях в разных уголках земного шара.Сюда приходят пообедать или поужинать с семьей, провести время за приятным разговором у камина с бокалом вина и послушать живую музыку.
+									dl
+										dt посадочных мест:  
+										dd 80
+										dt сезон: 
+										dd круглогодично
+					div(class="service-item-photo-holder", style="background-image: url(../dummy/services/r2.png)")
+
+				div(class="service-item service-item--left")
+					div(class="service-item-info")
+						div(class="service-item-info-inner")
+							div(class="service-item-name h1") Банкетный зал
+							div(class="service-item-description")
+								div(class="page-text")
+									p Большой и светлый зал для торжества в графских традициях.Великолепно декорированное пространство подходит для самых разных меропртиятий, от свадеб и юбилеев до крупных деловых форумов.  
+									dl
+										dt посадочных мест:  
+										dd 250
+										dt режим работы: 
+										dd по запросу
+									a(href="#", class="link link--large link--green") Подробнее
+					div(class="service-item-photo-holder", style="background-image: url(../dummy/services/r3.png)")
+
+				div(class="service-item service-item--right")
+					div(class="service-item-info")
+						div(class="service-item-info-inner")
+							div(class="service-item-name h1") Летняя площадка
+							div(class="service-item-description")
+								div(class="page-text")
+									p Лаунж-площадка на свежем воздухе с устричным баром и шампанерией – любимая локация для летних трапез. Можно заказать еду из ресторана или, недолго думая, поужинать устрицами и запить игривым игристым.
+									dl
+										dt посадочных мест:  
+										dd 150
+										dt сезон: 
+										dd лето
+									a(href="#", class="link link--large link--green") Подробнее
+					div(class="service-item-photo-holder", style="background-image: url(../dummy/services/r4.png)")
+
+				div(class="service-item service-item--left")
+					div(class="service-item-info")
+						div(class="service-item-info-inner")
+							div(class="service-item-name h1") Винотека
+							div(class="service-item-description")
+								div(class="page-text")
+									p В винотеке «Графского парка» богатое собрание сочинений лучших виноделов Старого и Нового Света. Благодаря специальному прибору CORAVIN вы можете каждый вечер расширять энологической кругозор и изучать элитные вина понемногу, не откупоривая бутылку, а растягивая удовольствие от напитка на несколько вечеров.
+					div(class="service-item-photo-holder", style="background-image: url(../dummy/services/r5.png)")
+
+	div(class="page-inner page-inner--w1")
+		div(class="booking")
+			div(class="booking-title") Информация
+			div(class="booking-icon")
+				include ../../prod/svg/cone.svg
+			div(class="booking-inner")
+				div(class="booking-description page-text")
+					| Мы сотрудничаем с ивент-агентствами Ростова-на-Дону и готовы помочь вам в организации мероприятий. 
+					br
+					| Свяжитесь с нами и ни о чем не беспокойтесь.:
+					br
+					| звоните:
+				div(class="booking-contacts")
+					a(href="tel:+79381238888", class="booking-contacts-phone") +7 (938) 123 88 88
+					div(class="booking-contacts-or") или пишите
+					a(href="mailto:info@grafsiypark.com", class="link link--green booking-contacts-email") info@grafsiypark.com
+
+
+
+
+
+
+
+

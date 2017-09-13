@@ -1,0 +1,17 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 71">
+  <title>m3</title>
+  <g id="Page-1">
+    <g id="Ресторан">
+      <g id="Page-1-2" data-name="Page-1">
+        <path id="Fill-1" d="M33,0V3H0V71H50V3H46V0H33Zm1,1H45V19.13L39.5,16,34,19.13V1ZM46,4h3V70H1V4H33V20.83l6.5-3.6,6.5,3.6V4Z" transform="translate(0 0)" fill="#346e6a"/>
+        <path id="Stroke-2" d="M24.5,41V56" transform="translate(0 0)" fill="none" stroke="#346e6a" stroke-linecap="round" stroke-linejoin="round"/>
+        <g id="Group-11">
+          <path id="Stroke-3" d="M19,32.5H16.94c-0.46,0-.44.28-0.44,0.73v2.48c0,0.46,0,.79.44,0.79H19" transform="translate(0 0)" fill="none" stroke="#346e6a" stroke-linecap="round" stroke-linejoin="round"/>
+          <path id="Stroke-5" d="M30,36.5h1.8a0.7,0.7,0,0,0,.7-0.79V33.23a0.65,0.65,0,0,0-.7-0.73H31" transform="translate(0 0)" fill="none" stroke="#346e6a" stroke-linecap="round" stroke-linejoin="round"/>
+          <path id="Stroke-7" d="M24.3,40.56a7.36,7.36,0,0,0,6.14-4.06H18.16A7.36,7.36,0,0,0,24.3,40.56Z" transform="translate(0 0)" fill="none" stroke="#346e6a" stroke-linecap="round" stroke-linejoin="round"/>
+          <path id="Stroke-9" d="M24.3,27.34a6.63,6.63,0,0,0-6.5,5.16h13A6.63,6.63,0,0,0,24.3,27.34Z" transform="translate(0 0)" fill="none" stroke="#346e6a" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

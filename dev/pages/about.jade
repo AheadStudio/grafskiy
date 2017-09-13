@@ -1,0 +1,101 @@
+extends ../templates/base.jade
+
+block content
+	div(class="page-inner page-inner--w1")
+		div(class="page-heading")
+			h1(class="page-heading-title") О загородном клубе
+
+	div(class="page-inner page-inner--w1 page-inner--promo")
+		div(class="promo promo--nodescr")
+			div(class="promo-items", data-margin="0", data-autoplay="5000" data-ratio="1.75/1", data-fit="cover", data-shadows="false", data-transitionduration="700", data-arrows="false", data-nav="false", data-width="100%", data-loop="true")
+				div(class="promo-item", data-img="../dummy/promo/5.png") 
+				div(class="promo-item", data-img="../dummy/promo/5.png") 
+				div(class="promo-item", data-img="../dummy/promo/5.png") 
+			div(class="promo-nav")
+				span(class="promo-nav-item promo-nav-item--prev")
+					include ../../prod/svg/larr.svg
+				span(class="promo-nav-counter")
+					span(class="promo-nav-counter-current") 1
+					span(class="promo-nav-counter-divider") 
+					span(class="promo-nav-counter-all") &nbsp;
+				span(class="promo-nav-item promo-nav-item--next")
+					include ../../prod/svg/rarr.svg
+
+	div(class="page-inner page-inner--w1")
+		div(class="page-text")
+			cite(class="big") Загородный клуб «Графский парк» – имение на Левом берегу Дона в лучших традициях русского дворянского поместья.
+
+	div(class="page-inner page-inner--w2")
+		div(class="page-text")
+			div(class="columns")
+				p В «Графский парк» приезжают за настроением и гастрономическими впечатлениями. Здесь празднуют пышные свадьбы и Дни рождения, проводят семейные выходные, организуют деловые встречи и конференции.
+				p На территории поместья есть все, чтобы получать удовольствие от отдыха: зеленый парк с уютными беседками, детские игровые зоны, просторные апартаменты графского особняка и большой открытый бассейн. 
+				p Для семейных бранчей и помпезных ужинов открыты три ресторанных зала разной вместимости. В меню – гастрономические сокровища из разных уголков мира и великие вина Старого и Нового света. Все лето на лаунж-террасе у воды проходят жаркие вечеринки и концерты, работает устричный бар и шампанерия. Зимой гости расслабляются у камина за дегустацией вин и коктейлей, слушая живой джаз, и общаются за неспешной игрой в бильярд.
+
+	div(class="page-inner page-inner--w1")
+		div(class="person")
+			div(class="person-photo-holder")
+				img(src="../dummy/president.png")
+			div(class="person-info")
+				div(class="person-name") Александр Чернышев
+				div(class="person-post")
+					| управляющий загородного 
+					br
+					| клуба «Графский парк»
+				div(class="person-text page-text") «Графский парк» приезжают за настроением и гастрономическими впечатлениями. Здесь празднуют пышные свадьбы и Дни рождения, проводят семейные выходные, организуют деловые встречи и конференции.
+
+
+	div(class="page-inner page-inner--w1")
+		div(class="page-text")
+			cite(class="small") «Графский парк» запомнится атмосферой, наполненной вниманием, приятными деталями и комфортом.
+
+	div(class="page-inner page-inner--w1")
+		div(class="photos")
+			div(class="photo-item")
+				img(src="../dummy/photos/1.png")
+				div(class="photo-item-description page-text") Inviting Topaz restaurant is located on the first floor of the hotel. 
+			div(class="photo-item")
+				img(src="../dummy/photos/2.png")
+				div(class="photo-item-description page-text") Inviting Topaz restaurant is located on the first floor of the hotel. 
+			div(class="photo-item")
+				img(src="../dummy/photos/4.png")
+				div(class="photo-item-description page-text") Наша консьерж-служба позаботится, чтобы вы ни в чем не знали стеснения.
+			div(class="photo-item")
+				img(src="../dummy/photos/3.png")
+				div(class="photo-item-description page-text") Если понадобится, мы пригласим для вас ивент-менеджера, стилиста и личного водителя.
+			div(class="sizer")
+			div(class="gutter")
+
+	div(class="page-inner page-inner--w1")
+		div(class="invalid")
+			div(class="invalid-title") Особые условия
+			div(class="invalid-inner")
+				div(class="invalid-slider-holder")
+					div(class="invalid-slider fotorama", data-width="100%", data-ratio="3/1", data-nav="false", data-loop="true", data-shadows="false", data-margin="0", data-transitionduration="700", data-arrows="false")
+						div(class="invalid-item")
+							div(class="invalid-item-photo-holder")
+								img(src="../dummy/invalid.png")
+							div(class="invalid-item-info")
+								div(class="invalid-item-icon")
+									include ../../prod/svg/invalid.svg
+								div(class="invalid-item-description page-text") На территории клуба создана комфортная среда для людей с ограниченными возможностями: съезды для колясок, отдельный санузел и номера на первом этаже отеля.
+						div(class="invalid-item")
+							div(class="invalid-item-photo-holder")
+								img(src="../dummy/invalid.png")
+							div(class="invalid-item-info")
+								div(class="invalid-item-icon")
+									include ../../prod/svg/invalid.svg
+								div(class="invalid-item-description page-text") На территории клуба создана комфортная среда для людей с ограниченными возможностями: съезды для колясок, отдельный санузел и номера на первом этаже отеля.
+						div(class="invalid-item")
+							div(class="invalid-item-photo-holder")
+								img(src="../dummy/invalid.png")
+							div(class="invalid-item-info")
+								div(class="invalid-item-icon")
+									include ../../prod/svg/invalid.svg
+								div(class="invalid-item-description page-text") На территории клуба создана комфортная среда для людей с ограниченными возможностями: съезды для колясок, отдельный санузел и номера на первом этаже отеля.
+
+	div(class="page-inner page-inner--w1")
+		div(class="page-text")
+			cite(class="big") Приезжайте и живите в удовольствие!
+			div(class="icon")
+				include ../../prod/svg/bg1.svg

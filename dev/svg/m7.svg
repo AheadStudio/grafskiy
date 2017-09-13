@@ -1,0 +1,15 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 71">
+  <title>m7</title>
+  <g id="Page-1">
+    <g id="Ресторан">
+      <g id="Page-1-2" data-name="Page-1">
+        <path id="Fill-1" d="M33,0V3H0V71H50V3H46V0H33Zm1,1H45V19.13L39.5,16,34,19.13V1ZM46,4h3V70H1V4H33V20.83l6.5-3.6,6.5,3.6V4Z" transform="translate(0 0)" fill="#346e6a"/>
+        <g id="Group-8">
+          <path id="Stroke-2" d="M24.5,48.5h0a8,8,0,0,1-8-8v-12h16v12A8,8,0,0,1,24.5,48.5Z" transform="translate(0 0)" fill="none" stroke="#346e6a" stroke-linecap="round" stroke-linejoin="round"/>
+          <path id="Stroke-4" d="M24.5,49V59" transform="translate(0 0)" fill="none" stroke="#346e6a" stroke-linecap="round" stroke-linejoin="round"/>
+          <path id="Stroke-6" d="M20,59.5h9" transform="translate(0 0)" fill="none" stroke="#346e6a" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

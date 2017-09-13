@@ -1,0 +1,401 @@
+include ../lib/html/html.jade
+doctype html
+<!--[if IE 7]><html lang="ru" prefix="og: http://ogp.me/ns#" class="ie8 no-js"><![endif]-->
+<!--[if IE 8]><html lang="ru" prefix="og: http://ogp.me/ns#" class="ie8 no-js"><![endif]-->
+<!--[if IE 9]><html lang="ru" prefix="og: http://ogp.me/ns#" class="ie9 no-js"><![endif]-->
+<!--[if !IE]><!-->
+html(lang="ru", class="no-js", prefix="og:http://ogp.me/ns#")
+	<!--<![endif]-->
+	head
+		+headerMeta({
+			charset: "utf-8",
+			keywords: info.keywords,
+			description: info.description,
+			title: info.title,
+			robots: "index, follow",
+			viewport: "width=device-width, initial-scale=1.0"
+		})
+		+openGraph({
+			type: "website",
+			siteName: info.siteName,
+			title: info.title,
+			description: info.description,
+			url: info.productionUrl,
+			image: info.image
+		})
+		+webIcons({
+			favicon: {
+				src: "/i/favicon.ico"
+			},
+			appleTouchIcon: [
+				{
+					src: "../i/icons/apple-touch-icon.jpg"
+				}, {
+					src: "../i/icons/apple-touch-icon-76.jpg",
+					size: "76x76"
+				}, {
+					src: "../i/icons/apple-touch-icon-140.jpg",	
+					size: "140x140"
+				}, {
+					src: "../i/icons/apple-touch-icon-152.jpg",
+					size: "152x152"
+				}
+			]
+		})
+		+addCSS([
+			{
+				media: "screen",
+				href: "../css/plugins/fotorama.css"
+			}, {
+				media: "screen",
+				href: "../css/" + info.code + ".css",
+				noCache: true
+			}, {
+				media: "screen",
+				href: "../css/" + info.code + ".responsive.css",
+				noCache: true
+			}
+		])
+
+	body(itemscope, itemtype="http://schema.org/WebPage")
+
+		div(class="page")
+			header(class="page-header", itemscope, itemtype="http://schema.org/WPHeader")
+				div(class="page-inner page-inner--w0")
+					div(class="lang-bar")
+						a(href="#", class="lang-bar-item current") RU
+						a(href="#", class="lang-bar-item") EN
+
+					div(class="header-controls")
+						a(href="#", class="link link--icon header-booking")
+							span(class="link-icon")
+								include ../../prod/svg/booking.svg
+							span(class="link-text") Бронировать
+
+						div(class="header-burger")
+							span(class="header-burger-inner") 
+
+					if page.code == "home"
+						div(class="header-logo") 
+
+					else
+						a(href="home.html", class="header-logo") 
+
+			main(class="page-content")
+				block content
+
+		footer(class="page-footer", itemscope, itemtype="http://schema.org/WPFooter")
+			div(class="footer-row footer-row--info")
+				div(class="page-inner page-inner--w1 page-inner--cleared")
+					div(class="footer-contacts")
+						div(class="footer-contacts-name") Парк-отель «Графский»
+						div(class="footer-contacts-address")
+							| Россия, Ростов-на-Дону, 
+							br
+							| ул. Левобережная, 62  
+							a(href="#", class="link link--white") на карте
+						div(class="footer-contacts-communication")
+							a(href="tel:+79381249999", class="footer-contacts-phone") +7 (938) 124 99 99
+							br
+							a(href="mailto:info@grafskiypark.com", class="link link--white footer-contacts-email") info@grafskiypark.com
+
+					div(class="footer-nav")
+						+menu({
+							rootClass: "footer-menu",
+							items: [
+								{
+									name: "Номера",
+									href: "#",
+									linkClass: "footer-menu-item--large"
+								}, {
+									name: "Президентский люкс",
+									href: "#"
+								}, {
+									name: "Свадебный люкс",
+									href: "#"
+								}, {
+									name: "Люкс",
+									href: "#"
+								}, {
+									name: "Стандарт",
+									href: "#"
+								}
+							]
+						})
+
+						+menu({
+							rootClass: "footer-menu",
+							items: [
+								{
+									name: "Ресторан",
+									href: "#",
+									linkClass: "footer-menu-item--large"
+								}, {
+									name: "Аванзал",
+									href: "#"
+								}, {
+									name: "Каминный зал",
+									href: "#"
+								}, {
+									name: "Банкетный зал",
+									href: "#"
+								}, {
+									name: "Летняя площадка",
+									href: "#"
+								}, {
+									name: "Лобби бар",
+									href: "#"
+								}
+							]
+						})
+
+						+menu({
+							rootClass: "footer-menu",
+							items: [
+								{
+									name: "Отдых",
+									href: "#",
+									linkClass: "footer-menu-item--large"
+								}, {
+									name: "Бассейн",
+									href: "#"
+								}, {
+									name: "Парк",
+									href: "#"
+								}, {
+									name: "Велопрогулки",
+									href: "#"
+								}, {
+									name: "Прогулки по Дону",
+									href: "#"
+								}, {
+									name: "Рыбалка",
+									href: "#"
+								}
+							]
+						})
+
+						+menu({
+							rootClass: "footer-menu",
+							items: [
+								{
+									name: "Услуги",
+									href: "#",
+									linkClass: "footer-menu-item--large"
+								}, {
+									name: "Свадьбы",
+									href: "#"
+								}, {
+									name: "Конференции",
+									href: "#"
+								}, {
+									name: "Трансфер",
+									href: "#"
+								}, {
+									name: "Детский клуб",
+									href: "#"
+								}, {
+									name: "Фотосессии",
+									href: "#"
+								}
+							]
+						})
+
+			div(class="footer-row footer-row--features")
+				div(class="page-inner page-inner--w1 page-inner--cleared")
+					div(class="footer-features")
+						div(class="footer-feature-item footer-feature-item--parking")
+							span(class="footer-feature-item-icon")
+								include ../../prod/svg/car.svg
+							span(class="footer-feature-item-title")
+								| Бесплатная 
+								br
+								| парковка
+
+						div(class="footer-feature-item footer-feature-item--wifi")
+							span(class="footer-feature-item-icon")
+								include ../../prod/svg/wifi.svg
+							span(class="footer-feature-item-title")
+								| Бесплатный 
+								br
+								| Wi-Fi
+
+						div(class="footer-feature-item footer-feature-item--temperature")
+							span(class="footer-feature-item-icon")
+								include ../../prod/svg/sun.svg
+							span(class="footer-feature-item-title") 17°C
+
+					div(class="footer-social")
+						div(class="footer-social-items")
+							a(href="#", class="footer-social-item", target="_blank")
+								include ../../prod/svg/ig.svg
+							a(href="#", class="footer-social-item", target="_blank")
+								include ../../prod/svg/fb.svg
+							a(href="#", class="footer-social-item", target="_blank")
+								include ../../prod/svg/vk.svg
+						div(class="footer-social-title")
+							| Следуйте 
+							br
+							| за нами
+
+			div(class="footer-row footer-row--nav")
+				div(class="page-inner page-inner--w1 page-inner--cleared")
+					+menu({
+						rootClass: "footer-menu2",
+						items: [
+							{
+								name: "О загородном клубе",
+								href: "#"
+							}, {
+								name: "Схема комплекса",
+								href: "#"
+							}, {
+								name: "Предложения",
+								href: "#"
+							}, {
+								name: "Карьера",
+								href: "#"
+							}, {
+								name: "Регламент оплаты",
+								href: "#"
+							}, {
+								name: "Реквизиты",
+								href: "#"
+							}, {
+								name: "Новости",
+								href: "#"
+							}, {
+								name: "Контакты",
+								href: "#"
+							}
+						]
+					})
+
+			div(class="footer-row footer-row--dark")
+				div(class="page-inner page-inner--w1 page-inner--cleared")
+					div(class="footer-copyrights") © 2017, Парк-отель «Графский». Официальный сайт.
+					div(class="footer-creators")
+						a(href="http://aheadstudio.ru", target="_blank", class="footer-creator-item")
+							span(class="footer-creator-item-title") Сделано в 
+							span(class="footer-creator-item-name") AheadStudio
+						| .
+						| &nbsp;
+						a(href="https://vk.com/club17191757", target="_blank", class="footer-creator-item")
+							span(class="footer-creator-item-title") Фотограф 
+							span(class="footer-creator-item-name") Евгений Денисюк
+						| .
+
+		div(class="header-panel")
+			div(class="header-panel-inner")
+				div(class="header-panel-nav")
+					div(class="header-panel-col")
+						+menu({
+							rootClass: "header-panel-menu",
+							items: [
+								{
+									name: "О клубе",
+									href: "#",
+									linkClass: "header-panel-menu-item--large"
+								}, {
+									name: "Номера",
+									href: "#",
+									linkClass: "header-panel-menu-item--large"
+								}, {
+									name: "Ресторан",
+									href: "#",
+									linkClass: "header-panel-menu-item--large"
+								}
+							]
+						})
+
+					div(class="header-panel-col")
+						+menu({
+							rootClass: "header-panel-menu",
+							items: [
+								{
+									name: "Отдых",
+									href: "#",
+									linkClass: "header-panel-menu-item--large"
+								}, {
+									name: "Услуги",
+									href: "#",
+									linkClass: "header-panel-menu-item--large"
+								}, {
+									name: "Предложения",
+									href: "#",
+									linkClass: "header-panel-menu-item--large"
+								}
+							]
+						})
+
+					div(class="header-panel-col")
+						+menu({
+							rootClass: "header-panel-menu",
+							items: [
+								{
+									name: "Схема парк-отеля",
+									href: "#"
+								}, {
+									name: "Предложения",
+									href: "#"
+								}, {
+									name: "Карьера",
+									href: "#"
+								}, {
+									name: "Регламент оплаты",
+									href: "#"
+								}, {
+									name: "Новости",
+									href: "#"
+								}, {
+									name: "Реквизиты",
+									href: "#"
+								}, {
+									name: "Контакты",
+									href: "#"
+								}
+							]
+						})
+
+				div(class="header-panel-footer")
+					div(class="header-panel-col")
+						div(class="header-panel-contacts")
+							| Россия, Ростов-на-Дону, 
+							br
+							| ул. Левобережная, 60 
+					div(class="header-panel-col")
+						div(class="header-panel-communication")
+							a(href="tel:+79381249999", class="header-panel-phone") +7 (938) 124 99 99
+							br
+							a(href="mailto:info@grafskiypark.com", class="link link--green header-panel-email") info@grafskiypark.com
+
+					div(class="header-panel-col")
+						div(class="header-panel-social")
+							div(class="header-panel-social-items")
+								a(href="#", class="header-panel-social-item", target="_blank")
+									include ../../prod/svg/ig.svg
+								a(href="#", class="header-panel-social-item", target="_blank")
+									include ../../prod/svg/fb.svg
+								a(href="#", class="header-panel-social-item", target="_blank")
+									include ../../prod/svg/vk.svg
+
+		//div(class="back-icons")
+			div(class="page-inner page-inner--w1")
+				div(class="back-icon-item back-icon-item--1")
+					include ../../prod/svg/deer.svg
+
+		+addJS([
+			{
+				src: "../js/jquery-3.2.1.min.js"
+			}, {
+				src: "../js/plugins/fotorama.js"
+			}, {
+				src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDOtcx9Sm_hunFMGzh4eqe_XRkFUYMWIao&sensor=true"
+			}, {
+				src: "../js/plugins/masonry.pkgd.min.js"
+			}, {
+				src: "../js/plugins/imagesloaded.pkgd.min.js"
+			}, {
+				src: "../js/" + info.code + ".js"
+			}
+		])

@@ -1,0 +1,90 @@
+extends ../templates/base.jade
+
+block content
+	div(class="page-inner page-inner--w1")
+		div(class="page-heading")
+			h1(class="h1") Банкетный зал
+
+	div(class="page-inner page-inner--w1 page-inner--promo")
+		div(class="promo promo--nodescr")
+			div(class="promo-items", data-margin="0", data-autoplay="5000" data-ratio="1.75/1", data-fit="cover", data-shadows="false", data-transitionduration="700", data-arrows="false", data-nav="false", data-width="100%", data-loop="true")
+				div(class="promo-item", data-img="../dummy/promo/6.png") 
+				div(class="promo-item", data-img="../dummy/promo/6.png") 
+				div(class="promo-item", data-img="../dummy/promo/6.png") 
+			div(class="promo-nav")
+				span(class="promo-nav-item promo-nav-item--prev")
+					include ../../prod/svg/larr.svg
+				span(class="promo-nav-counter")
+					span(class="promo-nav-counter-current") 1
+					span(class="promo-nav-counter-divider") 
+					span(class="promo-nav-counter-all") &nbsp;
+				span(class="promo-nav-item promo-nav-item--next")
+					include ../../prod/svg/rarr.svg
+
+	div(class="page-inner page-inner--w2")
+		div(class="features")
+			div(class="features-text page-text")
+				p Мятно-сливочный, воздушный, величественный банкетный зал – идеальное пространство для самых памятных событий. Здесь проходят свадьбы и Дни рождения, бизнес-презентации и конференции. Оборудован световой и акустической системой последнего поколения, сценой и экраном 6 х 4,5 метра, где можно эффектно демонстрировать презентации, ролики и рекламу. 
+				p Отдел маркетинга загородного клуба «Графский парк» сотрудничает с ведущими ивент-агентствами Ростова-на-Дону и готов помочь вам в организации мероприятий. 
+			div(class="features-items")
+				div(class="feature-item")
+					span(class="feature-item-name") посадочных мест
+					span(class="feature-item-value") 250
+				div(class="feature-item")
+					span(class="feature-item-name") сезон
+					span(class="feature-item-value") круглогодично
+				div(class="feature-item")
+					span(class="feature-item-name") назначение
+					span(class="feature-item-value") проведение свадеб, банкетов, кронференций
+
+	div(class="page-inner page-inner--w2")
+		div(class="menu menu--inline")
+			a(href="#", class="menu-item menu-item--inline")
+				div(class="menu-item-icon")
+					include ../../prod/svg/menu.svg
+				div(class="menu-item-inner")
+					div(class="menu-item-title") Банкетное меню
+					div(class="menu-item-fileinfo") pdf, 0.34 мб
+			a(href="#", class="menu-item menu-item--inline")
+				div(class="menu-item-icon")
+					include ../../prod/svg/menu.svg
+				div(class="menu-item-inner")
+					div(class="menu-item-title") Схемы рассадки
+					div(class="menu-item-fileinfo") pdf, 0.34 мб
+			a(href="#", class="menu-item menu-item--inline")
+				div(class="menu-item-icon")
+					include ../../prod/svg/menu.svg
+				div(class="menu-item-inner")
+					div(class="menu-item-title") Свет и звук
+					div(class="menu-item-fileinfo") pdf, 0.34 мб
+
+	div(class="page-inner page-inner--w1")
+		div(class="photos")
+			div(class="photo-item")
+				img(src="../dummy/photos/5.png")
+				div(class="photo-item-description page-text") Inviting Topaz restaurant is located on the first floor of the hotel. 
+			div(class="photo-item")
+				img(src="../dummy/photos/6.png")
+				div(class="photo-item-description page-text") Inviting Topaz restaurant is located on the first floor of the hotel. 
+			div(class="photo-item")
+				img(src="../dummy/photos/7.png")
+				div(class="photo-item-description page-text") Если понадобится, мы пригласим для вас ивент-менеджера, стилиста и личного водителя.
+			div(class="photo-item")
+				img(src="../dummy/photos/8.png")
+				div(class="photo-item-description page-text") Наша консьерж-служба позаботится, чтобы вы ни в чем не знали стеснения.
+			div(class="sizer")
+			div(class="gutter")
+
+	div(class="page-inner page-inner--w1")
+		div(class="booking")
+			div(class="booking-title") Бронирование
+			div(class="booking-icon")
+				include ../../prod/svg/cone.svg
+			div(class="booking-inner")
+				div(class="booking-description page-text") По вопросам бронирования зала, проведения свадеб. банкетов или конференций звоните:
+				div(class="booking-contacts")
+					a(href="tel:+78905007766", class="booking-contacts-phone") +7 890 500 77 66
+					div(class="booking-contacts-or") или пишите
+					a(href="mailto:info@grafsiypark.com", class="link link--green booking-contacts-email") info@grafsiypark.com
+
+

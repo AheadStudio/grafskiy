@@ -1,0 +1,190 @@
+extends ../templates/base.jade
+
+block content
+	div(class="page-inner page-inner--w1 page-inner--promo")
+		div(class="promo")
+			div(class="promo-items", data-margin="0", data-autoplay="5000" data-ratio="1.75/1", data-fit="cover", data-shadows="false", data-transitionduration="700", data-arrows="false", data-nav="false", data-width="100%", data-loop="true")
+				div(class="promo-item", data-img="../dummy/promo/2.png")
+					div(class="promo-item-description")
+						div(class="promo-item-description-inner") Летний бассейн с чашей 16 х 25 м.
+				div(class="promo-item", data-img="../dummy/promo/1.png")
+					div(class="promo-item-description")
+						div(class="promo-item-description-inner") Террритория парк-отеля
+				div(class="promo-item", data-img="../dummy/promo/3.png")
+					div(class="promo-item-description")
+						div(class="promo-item-description-inner") Летний бассейн с чашей 16 х 25 м. 
+				div(class="promo-item", data-img="../dummy/promo/4.png")
+					div(class="promo-item-description")
+						div(class="promo-item-description-inner") Летний бассейн с чашей 16 х 25 м. 
+			div(class="promo-nav")
+				span(class="promo-nav-item promo-nav-item--prev")
+					include ../../prod/svg/larr.svg
+				span(class="promo-nav-counter")
+					span(class="promo-nav-counter-current") 1
+					span(class="promo-nav-counter-divider") 
+					span(class="promo-nav-counter-all") &nbsp;
+				span(class="promo-nav-item promo-nav-item--next")
+					include ../../prod/svg/rarr.svg
+
+	div(class="page-inner page-inner--w1")
+		div(class="about")
+			div(class="about-title h1") О загородном клубе
+			div(class="about-description page-text") Загородный клуб «Графский парк» – имение на Левом берегу Дона в лучших традициях русского дворянского поместья.
+			div(class="about-footer")
+				a(href="#", class="link link--large link--green") Подробнее
+
+	div(class="slider")
+		div(class="slider-title h2") Номера
+		div(class="slider-items-holder")
+			div(class="slider-items", data-width="100%", data-ratio="3.8/1", data-fit="contain", data-shadows="false", data-nav="false", data-arrows="false", data-margin="150", data-transitionduration="700", data-glimpse="30%", data-loop="true")
+				div(class="slider-item", data-img="../dummy/rooms/1.png")
+					div(class="slider-item-info")
+						div(class="slider-item-title h1") Стандарт
+						div(class="slider-item-description page-text") Просторный однокомнатный номер площадью 27-30 квадратных метров.
+						a(href="#", class="btn btn--green") Бронировать
+				div(class="slider-item", data-img="../dummy/rooms/1.png")
+					div(class="slider-item-info")
+						div(class="slider-item-title h1") Стандарт
+						div(class="slider-item-description page-text") Просторный однокомнатный номер площадью 27-30 квадратных метров.
+						a(href="#", class="btn btn--green") Бронировать
+				div(class="slider-item", data-img="../dummy/rooms/1.png")
+					div(class="slider-item-info")
+						div(class="slider-item-title h1") Стандарт
+						div(class="slider-item-description page-text") Просторный однокомнатный номер площадью 27-30 квадратных метров.
+						a(href="#", class="btn btn--green") Бронировать
+			div(class="slider-items-controls")
+				div(class="slider-items-arr slider-items-arr--left")
+					include ../../prod/svg/larr.svg
+				div(class="slider-items-arr slider-items-arr--right")
+					include ../../prod/svg/rarr.svg
+
+	div(class="page-inner page-inner--w1")
+		div(class="restaurant")
+			div(class="restaurant-title h2") Ресторан
+			div(class="restaurant-inner")
+				div(class="restaurant-nav")
+					span(class="restaurant-nav-item restaurant-nav-item--prev")
+						include ../../prod/svg/larr.svg
+					span(class="restaurant-nav-item restaurant-nav-item--next")
+						include ../../prod/svg/rarr.svg
+				div(class="restaurant-items", data-margin="0", data-shadows="false", data-arrows="false", data-nav="false", data-loop="true", data-width="100%", data-ratio="2.3/1", data-transitionduration="700")
+					div(class="restaurant-item")
+						div(class="restaurant-item-photo-holder")
+							div(class="restaurant-item-photo", style="background-image: url(../dummy/restaurant.png)")
+						div(class="restaurant-item-info")
+							img(src="../dummy/restaurant2.png", class="restaurant-item-info-photo")
+							div(class="restaurant-item-info-title h1") Каминный зал 
+							div(class="restaurant-item-info-description page-text") Сюда приходят пообедать или поужинать с семьей, провести время за приятным разговором у камина с бокалом вина и послушать живую музыку.
+
+					div(class="restaurant-item")
+						div(class="restaurant-item-photo-holder")
+							div(class="restaurant-item-photo", style="background-image: url(../dummy/restaurant.png)")
+						div(class="restaurant-item-info")
+							img(src="../dummy/restaurant2.png", class="restaurant-item-info-photo")
+							div(class="restaurant-item-info-title h1") Каминный зал 
+							div(class="restaurant-item-info-description page-text") Сюда приходят пообедать или поужинать с семьей, провести время за приятным разговором у камина с бокалом вина и послушать живую музыку.
+
+					div(class="restaurant-item")
+						div(class="restaurant-item-photo-holder")
+							div(class="restaurant-item-photo", style="background-image: url(../dummy/restaurant.png)")
+						div(class="restaurant-item-info")
+							img(src="../dummy/restaurant2.png", class="restaurant-item-info-photo")
+							div(class="restaurant-item-info-title h1") Каминный зал 
+							div(class="restaurant-item-info-description page-text") Сюда приходят пообедать или поужинать с семьей, провести время за приятным разговором у камина с бокалом вина и послушать живую музыку.	
+
+	div(class="page-inner page-inner--w1")
+		div(class="services")
+			div(class="services-title h2") Услуги
+			div(class="services-items")
+				div(class="service-item service-item--left")
+					div(class="service-item-info")
+						div(class="service-item-info-inner")
+							div(class="service-item-name h1") Открытый бассейн
+							div(class="service-item-description page-text") У большого открытого бассейна вы проведёте лучшие мгновения летнего сезона.
+					div(class="service-item-photo-holder", style="background-image: url(../dummy/services/1.png)")
+
+				div(class="service-item service-item--right")
+					div(class="service-item-info")
+						div(class="service-item-info-inner")
+							div(class="service-item-name h1") Проведение свадеб
+							div(class="service-item-description page-text") В «Графском парке» все готово, чтобы отпраздновать рождение вашей новой семьи. Организацию праздника и красивые фотографии мы возьмем на себя.
+					div(class="service-item-photo-holder", style="background-image: url(../dummy/services/2.png)")
+
+				div(class="service-item service-item--left")
+					div(class="service-item-info")
+						div(class="service-item-info-inner")
+							div(class="service-item-name h1") Банкеты
+							div(class="service-item-description page-text") В светлом банкетном зале хватит места  для всех гостей! А продолжить торжество можно на свежем воздухе, на большой террасе в парке.
+					div(class="service-item-photo-holder", style="background-image: url(../dummy/services/3.png)")
+
+			div(class="services-footer")
+				a(href="#", class="link link--green link--large") Все услуги
+
+
+	div(class="page-inner page-inner--w1")
+		div(class="contacts")
+			div(class="contacts-info")
+				div(class="contacts-name h2") Локация
+				div(class="contacts-title h1") Как добраться
+				div(class="contacts-description page-text") Загородный клуб «Графский» расположен в зеленой зоне левого берега реки Дон, на обширной территории в 1,4 га.
+				div(class="contacts-routes")
+					div(class="contacts-route-item")
+						div(class="contacts-route-item-icon")
+							include ../../prod/svg/teatre.svg
+						div(class="contacts-route-item-distance")
+							span 7
+							|  км
+						div(class="contacts-route-item-from") от центра города
+						div(class="contacts-route-item-description") 10 минут на машине
+
+					div(class="contacts-route-item")
+						div(class="contacts-route-item-icon")
+							include ../../prod/svg/plain.svg
+						div(class="contacts-route-item-distance")
+							span 15
+							|  км
+						div(class="contacts-route-item-from") от аэропорта
+						div(class="contacts-route-item-description") 20 минут на машине
+
+			div(class="contacts-map")
+				div(class="map", data-lat="47.202997", data-lng="39.791876", data-zoom="13", data-icon="../svg/map_icon.svg")
+
+
+	div(class="page-inner page-inner--w1")
+		div(class="infrastructure")
+			div(class="infrastructure-title h2") Инфраструктура
+			div(class="infrastructure-inner")
+				div(class="infrastructure-items")
+					div(class="infrastructure-item-holder")
+						a(href="#", class="link link--green link--inverse") Парк-отель на 70 номеров
+					div(class="infrastructure-item-holder")
+						a(href="#", class="link link--green link--inverse") Рестораный комплекс
+					div(class="infrastructure-item-holder")
+						a(href="#", class="link link--green link--inverse") Винотека
+					div(class="infrastructure-item-holder")
+						a(href="#", class="link link--green link--inverse") Конференц-пространство
+					div(class="infrastructure-item-holder")
+						a(href="#", class="link link--green link--inverse") Фитнес зал
+					div(class="infrastructure-item-holder")
+						a(href="#", class="link link--green link--inverse") Детские игровые зоны
+					div(class="infrastructure-item-holder")
+						a(href="#", class="link link--green link--inverse") Открытый бассейн
+					div(class="infrastructure-item-holder")
+						a(href="#", class="link link--green link--inverse") Летняя терраса у воды
+					div(class="infrastructure-item-holder")
+						a(href="#", class="link link--green link--inverse") Устричный бар и шампанерия
+					div(class="infrastructure-item-holder")
+						a(href="#", class="link link--green link--inverse") Бильярд
+					div(class="infrastructure-item-holder")
+						a(href="#", class="link link--green link--inverse") Охраняемая парковка
+					div(class="infrastructure-item-holder")
+						a(href="#", class="link link--green link--inverse") Прачечная
+				div(class="infrastructure-note")
+					div(class="infrastructure-note-icon")
+						div(class="infrastructure-note-icon-inner")
+							include ../../prod/svg/eng.svg
+							span(class="infrastructure-note-icon-title") ENG
+					div(class="infrastructure-note-text") Персонал комплекса говорит с вами на русском и английском языке.
+		
+
+

@@ -1,0 +1,18 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 71">
+  <title>menu</title>
+  <g id="Page-1">
+    <g id="Банкетный-зал">
+      <g id="Page-1-2" data-name="Page-1">
+        <path id="Fill-1" d="M33,0V3H0V71H50V3H46V0H33Zm1,1H45V19.13L39.5,16,34,19.13V1ZM46,4h3V70H1V4H33V20.83l6.5-3.6,6.5,3.6V4Z" transform="translate(0 0)" fill="#346e6a"/>
+        <polygon id="Stroke-2" points="34.5 49.59 27 43.5 42 43.5 34.48 49.61 34.5 49.59" fill="none" stroke="#346e6a" stroke-linecap="round" stroke-linejoin="round"/>
+        <path id="Stroke-3" d="M34.5,59V50" transform="translate(0 0)" fill="none" stroke="#346e6a" stroke-linecap="round" stroke-linejoin="round"/>
+        <path id="Stroke-4" d="M31,59.5h7" transform="translate(0 0)" fill="none" stroke="#346e6a" stroke-linecap="round" stroke-linejoin="round"/>
+        <polygon id="Stroke-5" points="16.5 49.59 9 43.5 24 43.5 16.48 49.61 16.5 49.59" fill="none" stroke="#346e6a" stroke-linecap="round" stroke-linejoin="round"/>
+        <path id="Stroke-6" d="M16.5,59V50" transform="translate(0 0)" fill="none" stroke="#346e6a" stroke-linecap="round" stroke-linejoin="round"/>
+        <path id="Stroke-7" d="M13,59.5h7" transform="translate(0 0)" fill="none" stroke="#346e6a" stroke-linecap="round" stroke-linejoin="round"/>
+        <polygon id="Stroke-8" points="25.5 31.59 18 25.5 33 25.5 25.48 31.61 25.5 31.59" fill="none" stroke="#346e6a" stroke-linecap="round" stroke-linejoin="round"/>
+        <path id="Stroke-9" d="M25.5,41V32" transform="translate(0 0)" fill="none" stroke="#346e6a" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </g>
+  </g>
+</svg>

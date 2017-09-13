@@ -1,0 +1,1088 @@
+/*** Settings ***/
+@import "nib"
+/*** //Settings ***/
+
+
+@media screen and (max-width: 1250px)
+	/*** Slider ***/
+	.slider
+		.slider-item
+			.slider-item-info
+				.slider-item-description
+					padding 0
+	/*** //Slider ***/
+		
+	/*** Infrastructure ***/
+	.infrastructure
+		padding 0
+	/*** //Infrastructure ***/
+		
+	/*** Restaurant ***/
+	.restaurant
+		.restaurant-item-info
+			width 35%
+			
+			.restaurant-item-info-photo
+				margin-bottom 25px
+				
+			.restaurant-item-info-description
+				padding 0
+				
+		.restaurant-inner
+			.restaurant-nav
+				width 35%
+	/*** //Restaurant ***/
+		
+
+
+@media screen and (max-width: 1150px)
+	/*** Restaurant ***/
+	.restaurant
+		.restaurant-item-info
+			.restaurant-item-info-photo
+				margin-bottom 20px
+				
+				max-height 200px
+				width auto
+				max-width 100%
+	/*** //Restaurant ***/
+		
+
+
+@media screen and (max-width: 1050px)
+	/*** Base ***/
+	.page-inner
+		&--w1
+		&--w0
+			padding 0 20px
+	
+	html
+	body
+		height auto
+		
+	.page
+		min-height auto
+		min-width 300px
+
+	.page-content
+		padding-bottom 50px
+	/*** //Base ***/
+		
+	/*** Header ***/
+	.page-header
+		height 165px
+
+		.header-logo
+			position relative
+			top -5px
+
+			width 200px
+			height 135px
+			
+	.fixed-header
+	.menu-open
+		.page
+			padding-top 165px
+
+		.page-header
+			height 70px
+			
+			.lang-bar
+				top 8px
+				
+			.header-controls
+				top 9px
+	/*** //Header ***/
+		
+
+	/*** Footer ***/
+	.page-footer
+		margin 0
+
+		height auto
+
+		.footer-row
+			&--info
+				padding-top 50px
+				padding-bottom 30px
+				
+			&--features
+				padding 30px 0
+				
+			&--nav
+				padding 30px 0 30px 0
+				
+			&--dark
+				padding 30px 0
+				
+	.footer-features
+		padding 0
+		
+		.footer-feature-item
+			margin-right 25px
+			
+	.footer-menu2
+		.footer-menu2-item-holder
+			margin-right 9px
+	/*** //Footer ***/
+		
+	/*** Content ***/
+	.page-text
+		cite
+			margin 35px 0
+			
+			padding 0
+			
+			&.small
+				font-size 18px
+				line-height 26px
+
+			&.big
+				font-size 24px
+				line-height 30px
+	/*** //Content ***/
+
+	/*** Promo ***/
+	.promo
+		margin-bottom 40px
+	/*** //Promo ***/
+		
+	/*** About ***/
+	.about
+		margin 40px 0 75px 0
+		
+		padding 0
+	/*** //About ***/
+		
+	/*** Slider ***/
+	.slider
+		margin 75px 0 50px 0
+		
+		.slider-items-holder
+			.slider-items-arr
+				top 25%
+				
+				&--left
+					left 15%
+					
+				&--right
+					right 15%
+	/*** //Slider ***/
+		
+	/*** Restaurant ***/
+	.restaurant
+		margin 75px 0
+		
+	.restaurant-features
+		margin 50px 0
+	/*** //Restaurant ***/
+		
+	/*** Services ***/
+	.services
+		margin 75px 0
+		
+	.service-item
+		.service-item-info
+			width 40%
+
+			.service-item-info-inner
+				padding 50px 25px
+				
+		&--left
+			.service-item-info
+				left 60%
+	/*** //Services ***/
+		
+	/*** Infrastructure ***/
+	.infrastructure
+		margin 70px 0
+	/*** //Infrastructure ***/
+		
+	/*** Contacts ***/
+	.contacts
+		margin 50px 0
+		
+		.contacts-info
+			width 41%
+	/*** //Contacts ***/
+		
+	/*** Person ***/
+	.person
+		margin 70px 0
+	/*** //Person ***/
+		
+	/*** Features ***/
+	.features
+		margin 50px 0
+		
+		padding 12px 0
+	/*** //Features ***/
+		
+	/*** Menu ***/
+	.menu
+		margin 50px 0
+		
+		padding 0
+	/*** //Menu ***/
+		
+	/*** Booking ***/
+	.booking
+		margin 50px 0
+		
+		.booking-inner
+			padding 50px 50px 90px 50px
+	/*** //Booking ***/
+		
+	/*** Invalid ***/
+	.invalid
+		.invalid-title
+			top -12px
+
+			padding 5px 10px
+
+			font-size 18px
+			letter-spacing 3px
+			
+		.invalid-inner
+			padding 50px 50px
+	/*** //Invalid ***/
+
+
+
+@media screen and (max-width: 999px)
+	/*** Header ***/
+	.page-header
+		.lang-bar
+			display none
+			
+		.header-controls
+			float none
+			top 0
+			
+		.header-booking
+			float left
+			top 0
+			
+			.link-text
+				display none
+			
+		.header-burger
+			float right
+			top 0
+			
+	.page-heading
+		margin 20px 0
+		
+		.page-heading-title
+			font-size 38px
+			letter-spacing 6px
+			line-height 56px
+	/*** //Header ***/
+		
+	/*** Header panel ***/
+	.header-panel
+		.header-panel-inner
+			padding 0 20px
+	/*** //Header panel ***/
+		
+	/*** Footer ***/
+	.page-footer
+		.footer-row
+			&--info
+				padding 25px 0 15px 0
+				
+			&--dark
+				padding 20px 0
+				
+			&--features
+			&--nav
+				display none
+				
+	.footer-contacts
+		float none
+		margin-bottom 25px
+
+		width 100%
+		
+		font-size 14px
+		
+		.footer-contacts-name
+			margin-bottom 10px
+			
+		.footer-contacts-address
+			margin-bottom 5px
+			
+			line-height 22px
+		
+		.footer-contacts-communication
+			line-height 22px
+			
+			.footer-contacts-phone
+				font-size 16px
+
+	.footer-nav
+		float none
+		width 100%
+		overflow hidden
+		
+	.footer-menu
+		padding-right 20px
+		
+		.footer-menu-item-holder
+			margin-bottom 7px
+
+		.footer-menu-item
+			font-size 14px
+
+			&--large
+				margin-bottom 5px
+				
+	.footer-copyrights
+	.footer-creators
+		float none
+		
+		display block
+		
+		font-size 14px
+		
+	.footer-copyrights
+		margin-bottom 10px
+	/*** //Footer ***/
+		
+	/*** Content ***/
+	.page-text
+		font-size 16px
+		line-height 26px
+		
+		h1
+		/.h1
+			margin-bottom 10px
+
+			font-size 24px
+			line-height 32px
+			letter-spacing 4px
+			
+		h2
+		/.h2
+			margin-bottom 15px
+
+			font-size 20px
+			line-height 32px
+			letter-spacing 3px
+			
+		p
+			margin-bottom 15px
+			
+		dl
+			margin-bottom 15px
+			
+			dt
+				font-size 12px
+				line-height 20px
+				
+			dd
+				line-height 20px
+	/*** //Content ***/
+		
+	/*** Promo ***/
+	.promo
+		margin 0 0 20px 0
+	/*** //Promo ***/
+		
+	/*** About ***/
+	.about
+		margin 20px 0 40px 0
+		
+		.about-title
+			margin-bottom 10px
+			
+		.about-description
+			margin-bottom 15px
+
+			padding 0
+	/*** //About ***/
+		
+	/*** Slider ***/
+	.slider
+		margin 35px 0 25px 0
+		
+		.fotorama__stage
+			padding-bottom 240px
+		
+		.slider-title
+			margin-bottom 15px
+			
+		.slider-item
+			.slider-item-info
+				.slider-item-description
+					margin-bottom 25px
+	/*** //Slider ***/
+		
+	/*** Restaurant ***/
+	.restaurant
+		display none
+		
+	.restaurant-features
+		margin 30px 0 10px 0
+
+		.restaurant-feature-item
+			margin-bottom 20px
+
+			width 49%
+			
+			.restaurant-feature-item-icon
+				margin-bottom 10px
+			
+			.restaurant-feature-item-title
+				font-size 16px
+				line-height 24px
+	/*** //Restaurant ***/
+		
+	/*** Services ***/
+	.services
+		margin 35px 0
+
+	.services-items
+		margin-bottom 25px
+
+	.service-item
+		margin-bottom 35px
+		
+		.service-item-photo-holder
+			float none
+			
+			display block
+			width 100%
+			
+		.service-item-info
+			position static
+			left 0
+			top 0
+			transform translate(0, 0)
+			
+			width 100%
+			
+			.service-item-info-inner
+				position static
+				left 0
+				top 0
+				transform translate(0, 0)
+				
+				padding 20px 0
+				
+			.service-item-name
+				margin-bottom 10px
+	/*** //Services ***/
+		
+	/*** Contacts ***/
+	.contacts
+		margin 25px 0
+		
+		.contacts-info
+			float none
+			margin-bottom 15px
+			
+			width 100%
+			
+		.contacts-map
+			float none
+			
+			width 100%
+			height 90vh
+			
+		.contacts-description
+			margin-bottom 25px
+			
+			padding 0
+			
+		.contacts-routes
+			.contacts-route-item
+				.contacts-route-item-icon
+					margin-bottom 12px
+					
+				.contacts-route-item-distance
+					font-size 16px
+					
+					span
+						font-size 24px
+						
+				.contacts-route-item-from
+					margin-bottom 10px
+					
+				&:first-child
+					padding-right 15px
+					
+				&:last-child
+					padding-left 15px
+	/*** //Contacts ***/
+
+	/*** Infrastructure ***/
+	.infrastructure
+		margin 35px 0
+		
+		.infrastructure-item-holder
+			margin-bottom 15px
+			
+			.link
+				font-size 16px
+	/*** //Infrastructure ***/
+		
+	/*** Menu ***/
+	.menu
+		margin 40px 0
+		
+		.menu-item
+			.menu-item-icon
+				width 40px
+				height 60px
+				
+			.menu-item-title
+				font-size 18px
+				line-height 24px
+				letter-spacing 2px
+				
+			.menu-item-fileinfo
+				font-size 12px
+				letter-spacing 1px
+				line-height 22px
+
+			&--inline
+				.menu-item-inner
+					padding-left 55px
+					
+			&--block
+				margin-bottom 35px
+
+				.menu-item-icon
+					margin-bottom 5px
+
+				.menu-item-title
+					margin-bottom 0
+	/*** //Menu ***/
+
+	/*** Breakfast ***/
+	.breakfast
+		margin 50px 0
+		
+		padding 0
+	/*** //Breakfast ***/
+		
+	/*** Person ***/
+	.person
+		padding 0
+	/*** //Person ***/
+
+
+
+@media screen and (max-width: 800px)
+	/*** Header panel ***/
+	.header-panel
+		.header-panel-nav
+			margin-bottom 50px
+			
+		.header-panel-menu
+			.header-panel-menu-item
+				&--large
+					margin-bottom 55px
+					
+					font-size 20px
+					letter-spacing 2px
+		
+		.header-panel-menu
+			.header-panel-menu-item-holder
+				margin-bottom 8px
+
+			.header-panel-menu-item
+				font-size 14px
+				
+		.header-panel-contacts
+			font-size 14px
+			line-height 24px
+			
+		.header-panel-communication
+			font-size 16px
+			line-height 24px
+			
+			.header-panel-email
+				line-height 20px
+				font-size 14px
+	/*** //Header panel ***/
+
+	/*** Content ***/
+	.page-text
+		font-size 14px
+		line-height 22px
+
+		p
+			margin-bottom 12px
+
+		cite
+			margin 25px 0
+			
+			&.small
+				font-size 18px
+				line-height 24px
+
+			&.big
+				font-size 20px
+				line-height 26px
+				
+		.columns
+			margin 35px 0
+			
+			column-count 1
+			
+		.link
+			&--green
+				&.link--large
+					line-height 22px
+					letter-spacing 4px
+	/*** //Content ***/
+		
+	/*** Person ***/ 
+	.person
+		margin 35px 0
+		
+		.person-photo-holder
+			float none
+			margin-bottom 15px
+			
+			width auto
+			
+			border-radius 0
+			
+			&:before
+				content none
+				
+			img
+				margin 0 auto
+				position static
+				transform translate(0, 0)
+				
+				display block
+				max-width 100%
+				height auto
+
+				border-radius 50%
+				
+		.person-info
+			padding-left 0
+			
+		.person-name
+			margin-bottom 10px
+			
+			font-size 18px
+			letter-spacing 2px
+			line-height 1
+			
+		.person-post
+			margin-bottom 15px
+			
+			letter-spacing 1px
+			line-height 20px
+	/*** //Person ***/
+		
+	/*** Photos ***/
+	.photos
+		.photo-item
+			margin-bottom 20px
+
+			width 100%
+			
+			img
+				margin-bottom 10px
+			
+		.sizer
+			width 100%
+			
+		.gutter
+			width 0
+	/*** //Photos ***/
+
+	/*** Features ***/
+	.features
+		margin 25px 0
+		
+		padding-bottom 0
+		
+		.features-text
+			float none
+			margin-bottom 20px
+
+			width 100%
+			
+		.features-items
+			padding 0
+			
+			.feature-item
+				margin-bottom 10px
+				
+				.feature-item-name
+					font-size 12px
+					line-height 16px
+					
+				.feature-item-value
+					font-size 16px
+					line-height 16px
+	/*** //Features ***/
+
+	/*** Booking ***/
+	.booking
+		margin 25px 0
+		
+		.booking-title
+			top -17px
+
+			padding 5px 10px
+
+			font-size 18px
+			letter-spacing 3px
+			
+		.booking-icon
+			bottom -20px
+
+			padding 5px 10px
+
+			width 150px
+			height 65px
+			
+		.booking-inner
+			padding 30px 20px 65px 20px
+			
+		.booking-description
+			margin-bottom 5px
+			
+		.booking-contacts
+			.booking-contacts-phone
+			.booking-contacts-email
+				font-size 20px
+				letter-spacing 1px
+				
+			.booking-contacts-or
+				margin 5px 0 10px 0
+	/*** //Booking ***/
+		
+	/*** Promo ***/
+	.promo
+		padding-bottom 30px
+
+		.promo-item
+			.promo-item-description
+				padding 10px 0
+
+				font-size 14px
+				line-height 18px
+				text-align center
+				
+		.promo-nav
+			bottom 10px
+
+			.promo-nav-counter
+				font-size 16px
+				
+		&--nodescr
+			.promo-nav
+				bottom 5px			
+	/*** //Promo ***/
+		
+	/*** Slider ***/
+	.slider
+		.slider-items-holder
+			.slider-items-arr
+				top 30%
+				
+				width 30px
+				height 13px
+
+				&--left
+					left 20px
+					
+				&--right
+					right 20px
+					
+		.slider-item-info
+			padding 0 20px
+	/*** //Slider ***/
+		
+	/*** Invalid ***/
+	.invalid
+		display none
+
+		.invalid-inner
+			padding 30px 20px
+			
+		.invalid-item
+			.invalid-item-photo-holder
+				float none
+				
+				width 100%
+	/*** //Invalid ***/
+		
+	/*** Infrastructure ***/
+	.infrastructure
+		.infrastructure-inner
+			&:before
+				content none
+
+		.infrastructure-items
+			float none
+			margin-bottom 25px
+			
+			width 100%
+			
+		.infrastructure-note
+			float none
+			
+			width 100%
+			padding-left 0
+	/*** //Infrastructure ***/
+		
+	/*** Menu ***/
+	.menu
+		margin 30px 0
+		
+		.menu-item
+			&--inline
+			&--block
+				margin-bottom 25px
+
+				display block
+				width 100%
+				overflow hidden
+				padding 0
+
+				&:last-child
+					margin-bottom 0
+	/*** //Menu ***/
+		
+
+
+@media screen and (max-width: 640px)
+	/*** Base ***/
+	.page-content
+		padding-bottom 25px
+		
+	.page-inner
+		&--promo
+			width 100%
+			padding 0
+	/*** //Base ***/
+		
+	/*** Header ***/
+	.page-heading
+		margin 5px 0
+
+		.page-heading-title
+			font-size 28px
+			letter-spacing 4px
+			line-height 38px
+	/*** //Header ***/
+
+	/*** Header panel ***/
+	.header-panel
+		.header-panel-inner
+			position static
+			left 0
+			top 0
+			transform translate(0, 0)
+			
+			width 100%
+			height 100%
+			padding-top 80px
+			overflow scroll
+			overflow-x hidden
+
+		.header-panel-col
+			float none
+			
+			width 100%
+
+		.header-panel-nav
+			margin-bottom 10px
+			
+		.header-panel-menu
+			.header-panel-menu-item-holder
+				margin-bottom 20px
+				
+				&:last-child
+					margin-bottom 20px
+
+			.header-panel-menu-item
+				margin-bottom 0
+				
+				font-size 16px
+				
+				&--large
+					margin-bottom 10px
+
+					font-size 22px
+					
+		.header-panel-footer
+			.header-panel-col
+				margin-bottom 20px
+	/*** //Header panel ***/
+
+	/*** Footer ***/
+	.page-footer
+		.footer-row
+			&--dark
+				padding 15px 0
+				
+			&--info
+				padding 15px 0 5px 0
+
+	.footer-contacts
+		margin-bottom 15px
+		
+		.footer-contacts-address
+		.footer-contacts-communication
+			font-size 12px
+			line-height 20px
+			
+		.footer-contacts-communication
+			.footer-contacts-phone
+				font-size 14px
+	
+	.footer-menu
+		float none
+		margin-bottom 15px
+		
+		width 100%
+		padding 0
+		
+		&:last-child
+			margin-bottom 0
+		
+		.footer-menu-item
+			display none
+			
+			&--large
+				display block
+				
+	.footer-copyrights
+	.footer-creators
+		font-size 12px
+	/*** //Footer ***/
+		
+	/*** Content ***/
+	.btn
+		&--green
+			padding 9px 20px 7px 20px
+			
+			font-size 14px
+			line-height 24px
+			letter-spacing 3px
+	/*** //Content ***/
+		
+	/*** Services ***/
+	.service-item
+		.service-item-info
+			.service-item-info-inner
+				margin-bottom 10px
+
+				padding 0
+	/*** //Services ***/
+		
+	/*** Infrastructure ***/
+	.infrastructure
+		margin 20px 0
+		
+		.infrastructure-title
+			margin-bottom 20px
+		
+		.infrastructure-items
+			column-count 1
+			
+		.infrastructure-item-holder
+			&:last-child
+				margin-bottom 0
+	/*** //Infrastructure ***/
+		
+	/*** Slider ***/
+	.slider
+		.slider-item
+			.slider-item-info
+				.slider-item-title
+					margin-bottom 5px
+
+				.slider-item-description
+					margin-bottom 15px
+					
+		.fotorama__stage
+			padding-bottom 210px
+	/*** //Slider ***/
+		
+	/*** Restaurant ***/
+	.restaurant-features
+		margin 15px 0 5px 0
+		
+		.restaurant-feature-item
+			float none
+			
+			width 100%
+			padding 0
+			
+			text-align center
+			
+			.restaurant-feature-item-icon
+				height auto
+				
+				line-height 1
+	/*** //Restaurant ***/
+	
+	/*** Breakfast ***/
+	.breakfast
+		margin 25px 0
+		
+		.breakfast-photo
+			width 37%
+			
+		.breakfast-info-photo-holder
+			margin-bottom 15px
+	/*** //Breakfast ***/
+		
+
+
+
+@media screen and (max-width: 500px)
+	/*** Header ***/
+	.page-heading
+		.page-heading-title
+			font-size 24px
+			line-height 30px
+			letter-spacing 3px
+	/*** //Header ***/
+
+	/*** Footer ***/
+	.footer-creators
+		.footer-creator-item
+			line-height 1.4
+			
+			.footer-creator-item-name
+				line-height 1
+	/*** //Footer ***/
+
+	/*** Slider ***/
+	.slider
+		.slider-items-holder
+			.slider-items-arr
+				top 22%
+				
+				width 25px
+				
+				&--left
+					left 10px
+					
+				&--right
+					right 10px
+	/*** //Slider ***/
+
+	/*** Booking ***/
+	.booking
+		.booking-contacts
+			.booking-contacts-phone
+			.booking-contacts-email
+				font-size 18px
+	/*** //Booking ***/
+
+
