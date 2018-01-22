@@ -8,9 +8,13 @@ block content
 	div(class="page-inner page-inner--w1 page-inner--promo")
 		div(class="promo promo--nodescr")
 			div(class="promo-items", data-margin="0", data-autoplay="5000" data-ratio="1.75/1", data-fit="cover", data-shadows="false", data-transitionduration="700", data-arrows="false", data-nav="false", data-width="100%", data-loop="true")
-				div(class="promo-item", data-img="../dummy/promo/7.png") 
-				div(class="promo-item", data-img="../dummy/promo/7.png") 
-				div(class="promo-item", data-img="../dummy/promo/7.png") 
+				div(class="promo-item", data-img="../dummy/promo/r3.jpg") 
+				div(class="promo-item", data-img="../dummy/promo/r4.jpg") 
+				div(class="promo-item", data-img="../dummy/promo/r5.jpg") 
+				div(class="promo-item", data-img="../dummy/promo/re1.jpg") 
+				div(class="promo-item", data-img="../dummy/promo/re2.jpg") 
+				div(class="promo-item", data-img="../dummy/promo/re3.jpg") 
+				div(class="promo-item", data-img="../dummy/promo/re4.jpg") 
 			div(class="promo-nav")
 				span(class="promo-nav-item promo-nav-item--prev")
 					include ../../prod/svg/larr.svg
@@ -82,11 +86,11 @@ block content
 			div(class="restaurant-feature-item")
 				span(class="restaurant-feature-item-icon")
 					include ../../prod/svg/r2.svg
-				span(class="restaurant-feature-item-title") Большая винотека (более 400 наименований)
+				span(class="restaurant-feature-item-title") Винотека (более 60 наименований вин)
 			div(class="restaurant-feature-item")
 				span(class="restaurant-feature-item-icon")
 					include ../../prod/svg/r3.svg
-				span(class="restaurant-feature-item-title") Авторская русская кухня
+				span(class="restaurant-feature-item-title") Авторская кухня
 			div(class="restaurant-feature-item")
 				span(class="restaurant-feature-item-icon")
 					include ../../prod/svg/r4.svg
@@ -117,7 +121,7 @@ block content
 				div(class="menu-item-icon")
 					include ../../prod/svg/m2.svg
 				div(class="menu-item-inner")
-					div(class="menu-item-title") Меню завраков
+					div(class="menu-item-title") Меню завтраков
 					div(class="menu-item-fileinfo") pdf, 0.34 мб
 
 			a(href="#", class="menu-item menu-item--block")
@@ -162,7 +166,7 @@ block content
 	div(class="page-inner page-inner--w1")
 		div(class="services")
 			div(class="services-items")
-				div(class="service-item service-item--left")
+				div(class="service-item service-item--left", id="avanzal")
 					div(class="service-item-info")
 						div(class="service-item-info-inner")
 							div(class="service-item-name h1") Аванзал
@@ -174,9 +178,11 @@ block content
 										dd 40
 										dt сезон: 
 										dd круглогодично
-					div(class="service-item-photo-holder", style="background-image: url(../dummy/services/r1.png)")
+										dt режим работы: 
+										dd 12:00 – 23:00
+					div(class="service-item-photo-holder", style="background-image: url(../dummy/services/r1.jpg)")
 
-				div(class="service-item service-item--right")
+				div(class="service-item service-item--right", id="kaminzal")
 					div(class="service-item-info")
 						div(class="service-item-info-inner")
 							div(class="service-item-name h1") Каминный зал
@@ -185,27 +191,29 @@ block content
 									p Подобное пространство можно встретить в аристократических имениях в разных уголках земного шара.Сюда приходят пообедать или поужинать с семьей, провести время за приятным разговором у камина с бокалом вина и послушать живую музыку.
 									dl
 										dt посадочных мест:  
-										dd 80
+										dd 45
 										dt сезон: 
 										dd круглогодично
-					div(class="service-item-photo-holder", style="background-image: url(../dummy/services/r2.png)")
+										dt режим работы: 
+										dd 12:00 – 23:00
+					div(class="service-item-photo-holder", style="background-image: url(../dummy/services/r2.jpg)")
 
-				div(class="service-item service-item--left")
+				div(class="service-item service-item--left", id="banketzal")
 					div(class="service-item-info")
 						div(class="service-item-info-inner")
 							div(class="service-item-name h1") Банкетный зал
 							div(class="service-item-description")
 								div(class="page-text")
-									p Большой и светлый зал для торжества в графских традициях.Великолепно декорированное пространство подходит для самых разных меропртиятий, от свадеб и юбилеев до крупных деловых форумов.  
+									p Большой и светлый зал для торжества в графских традициях. Великолепно декорированное пространство подходит для самых разных мероприятий, от свадеб и юбилеев до крупных деловых форумов.  
 									dl
 										dt посадочных мест:  
 										dd 250
 										dt режим работы: 
 										dd по запросу
 									a(href="#", class="link link--large link--green") Подробнее
-					div(class="service-item-photo-holder", style="background-image: url(../dummy/services/r3.png)")
+					div(class="service-item-photo-holder", style="background-image: url(../dummy/services/r3.jpg)")
 
-				div(class="service-item service-item--right")
+				div(class="service-item service-item--right", id="letnyay")
 					div(class="service-item-info")
 						div(class="service-item-info-inner")
 							div(class="service-item-name h1") Летняя площадка
@@ -220,14 +228,14 @@ block content
 									a(href="#", class="link link--large link--green") Подробнее
 					div(class="service-item-photo-holder", style="background-image: url(../dummy/services/r4.png)")
 
-				div(class="service-item service-item--left")
+				div(class="service-item service-item--left", id="vinoteka")
 					div(class="service-item-info")
 						div(class="service-item-info-inner")
 							div(class="service-item-name h1") Винотека
 							div(class="service-item-description")
 								div(class="page-text")
 									p В винотеке «Графского парка» богатое собрание сочинений лучших виноделов Старого и Нового Света. Благодаря специальному прибору CORAVIN вы можете каждый вечер расширять энологической кругозор и изучать элитные вина понемногу, не откупоривая бутылку, а растягивая удовольствие от напитка на несколько вечеров.
-					div(class="service-item-photo-holder", style="background-image: url(../dummy/services/r5.png)")
+					div(class="service-item-photo-holder", style="background-image: url(../dummy/services/r5.jpg)")
 
 	div(class="page-inner page-inner--w1")
 		div(class="booking")
@@ -238,9 +246,7 @@ block content
 				div(class="booking-description page-text")
 					| Мы сотрудничаем с ивент-агентствами Ростова-на-Дону и готовы помочь вам в организации мероприятий. 
 					br
-					| Свяжитесь с нами и ни о чем не беспокойтесь.:
-					br
-					| звоните:
+					| Свяжитесь с нами и ни о чем не беспокойтесь:
 				div(class="booking-contacts")
 					a(href="tel:+79381238888", class="booking-contacts-phone") +7 (938) 123 88 88
 					div(class="booking-contacts-or") или пишите

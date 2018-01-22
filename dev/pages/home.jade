@@ -4,16 +4,16 @@ block content
 	div(class="page-inner page-inner--w1 page-inner--promo")
 		div(class="promo")
 			div(class="promo-items", data-margin="0", data-autoplay="5000" data-ratio="1.75/1", data-fit="cover", data-shadows="false", data-transitionduration="700", data-arrows="false", data-nav="false", data-width="100%", data-loop="true")
-				div(class="promo-item", data-img="../dummy/promo/2.png")
+				div(class="promo-item", data-img="../dummy/promo/n1.jpg")
 					div(class="promo-item-description")
-						div(class="promo-item-description-inner") Летний бассейн с чашей 16 х 25 м.
-				div(class="promo-item", data-img="../dummy/promo/1.png")
+						div(class="promo-item-description-inner") Гостиница на 67 номеров.
+				div(class="promo-item", data-img="../dummy/promo/n2.jpg")
 					div(class="promo-item-description")
 						div(class="promo-item-description-inner") Террритория парк-отеля
-				div(class="promo-item", data-img="../dummy/promo/3.png")
+				div(class="promo-item", data-img="../dummy/promo/n3.jpg")
 					div(class="promo-item-description")
 						div(class="promo-item-description-inner") Летний бассейн с чашей 16 х 25 м. 
-				div(class="promo-item", data-img="../dummy/promo/4.png")
+				div(class="promo-item", data-img="../dummy/promo/n4.jpg")
 					div(class="promo-item-description")
 						div(class="promo-item-description-inner") Летний бассейн с чашей 16 х 25 м. 
 			div(class="promo-nav")
@@ -31,26 +31,31 @@ block content
 			div(class="about-title h1") О загородном клубе
 			div(class="about-description page-text") Загородный клуб «Графский парк» – имение на Левом берегу Дона в лучших традициях русского дворянского поместья.
 			div(class="about-footer")
-				a(href="#", class="link link--large link--green") Подробнее
+				a(href="about.html", class="link link--large link--green") Подробнее
 
 	div(class="slider")
 		div(class="slider-title h2") Номера
 		div(class="slider-items-holder")
 			div(class="slider-items", data-width="100%", data-ratio="3.8/1", data-fit="contain", data-shadows="false", data-nav="false", data-arrows="false", data-margin="150", data-transitionduration="700", data-glimpse="30%", data-loop="true")
-				div(class="slider-item", data-img="../dummy/rooms/1.png")
+				div(class="slider-item", data-img="../dummy/rooms/bz.jpg")
 					div(class="slider-item-info")
-						div(class="slider-item-title h1") Стандарт
-						div(class="slider-item-description page-text") Просторный однокомнатный номер площадью 27-30 квадратных метров.
+						div(class="slider-item-title h1") Бизнес
+						div(class="slider-item-description page-text") Просторный однокомнатный номер для комфортного размещения одной или двух персон.
 						a(href="#", class="btn btn--green") Бронировать
 				div(class="slider-item", data-img="../dummy/rooms/1.png")
 					div(class="slider-item-info")
-						div(class="slider-item-title h1") Стандарт
-						div(class="slider-item-description page-text") Просторный однокомнатный номер площадью 27-30 квадратных метров.
+						div(class="slider-item-title h1") Супериор
+						div(class="slider-item-description page-text") Номер повышенной комфортности с ванной и гардеробной комнатой.
+						a(href="#", class="btn btn--green") Бронировать
+				div(class="slider-item", data-img="../dummy/rooms/lux.jpg")
+					div(class="slider-item-info")
+						div(class="slider-item-title h1") Люкс
+						div(class="slider-item-description page-text") Элегантный однокомнатный номер с большой ванной и оригинальной планировкой, с видом на парк и бассейн. 
 						a(href="#", class="btn btn--green") Бронировать
 				div(class="slider-item", data-img="../dummy/rooms/1.png")
 					div(class="slider-item-info")
-						div(class="slider-item-title h1") Стандарт
-						div(class="slider-item-description page-text") Просторный однокомнатный номер площадью 27-30 квадратных метров.
+						div(class="slider-item-title h1") Президентский
+						div(class="slider-item-description page-text") Фешенебельный четырехкомнатный сьют на отдельном этаже с собственной столовой и миникухней.
 						a(href="#", class="btn btn--green") Бронировать
 			div(class="slider-items-controls")
 				div(class="slider-items-arr slider-items-arr--left")
@@ -69,22 +74,31 @@ block content
 						include ../../prod/svg/rarr.svg
 				div(class="restaurant-items", data-margin="0", data-shadows="false", data-arrows="false", data-nav="false", data-loop="true", data-width="100%", data-ratio="2.3/1", data-transitionduration="700")
 					div(class="restaurant-item")
-						div(class="restaurant-item-photo-holder")
-							div(class="restaurant-item-photo", style="background-image: url(../dummy/restaurant.png)")
-						div(class="restaurant-item-info")
-							img(src="../dummy/restaurant2.png", class="restaurant-item-info-photo")
-							div(class="restaurant-item-info-title h1") Каминный зал 
-							div(class="restaurant-item-info-description page-text") Сюда приходят пообедать или поужинать с семьей, провести время за приятным разговором у камина с бокалом вина и послушать живую музыку.
-
+						a(href="restaurant.html#avanzal", class="restaurant-item-link")
+							div(class="restaurant-item-photo-holder")
+								div(class="restaurant-item-photo", style="background-image: url(../dummy/services/r1.jpg)")
+							div(class="restaurant-item-info")
+								img(src="../dummy/services/rr1.jpg", class="restaurant-item-info-photo")
+								div(class="restaurant-item-info-title h1") Аванзал
+								div(class="restaurant-item-info-description page-text") Здесь приятно пить кофе, обсуждать дела и думать о хорошем.
 					div(class="restaurant-item")
-						div(class="restaurant-item-photo-holder")
-							div(class="restaurant-item-photo", style="background-image: url(../dummy/restaurant.png)")
-						div(class="restaurant-item-info")
-							img(src="../dummy/restaurant2.png", class="restaurant-item-info-photo")
-							div(class="restaurant-item-info-title h1") Каминный зал 
-							div(class="restaurant-item-info-description page-text") Сюда приходят пообедать или поужинать с семьей, провести время за приятным разговором у камина с бокалом вина и послушать живую музыку.
-
+						a(href="restaurant.html#kamin", class="restaurant-item-link")
+							div(class="restaurant-item-photo-holder")
+								div(class="restaurant-item-photo", style="background-image: url(../dummy/services/r2.jpg)")
+							div(class="restaurant-item-info")
+								img(src="../dummy/services/rr2.jpg", class="restaurant-item-info-photo")
+								div(class="restaurant-item-info-title h1") Каминный зал 
+								div(class="restaurant-item-info-description page-text") Сюда приходят пообедать или поужинать с семьей, провести время за приятным разговором у камина с бокалом вина и послушать живую музыку.
 					div(class="restaurant-item")
+						a(href="hall.html", class="restaurant-item-link")
+							div(class="restaurant-item-photo-holder")
+								div(class="restaurant-item-photo", style="background-image: url(../dummy/services/r3.jpg)")
+							div(class="restaurant-item-info")
+								img(src="../dummy/services/rr3.jpg", class="restaurant-item-info-photo")
+								div(class="restaurant-item-info-title h1") Банкетный зал
+								div(class="restaurant-item-info-description page-text") Великолепно декорированное пространство подходит для самых разных мероприятий, от свадеб и юбилеев до крупных деловых форумов.
+
+					//div(class="restaurant-item")
 						div(class="restaurant-item-photo-holder")
 							div(class="restaurant-item-photo", style="background-image: url(../dummy/restaurant.png)")
 						div(class="restaurant-item-info")
@@ -101,7 +115,7 @@ block content
 						div(class="service-item-info-inner")
 							div(class="service-item-name h1") Открытый бассейн
 							div(class="service-item-description page-text") У большого открытого бассейна вы проведёте лучшие мгновения летнего сезона.
-					div(class="service-item-photo-holder", style="background-image: url(../dummy/services/1.png)")
+					div(class="service-item-photo-holder", style="background-image: url(../dummy/services/1.jpg)")
 
 				div(class="service-item service-item--right")
 					div(class="service-item-info")
@@ -115,7 +129,7 @@ block content
 						div(class="service-item-info-inner")
 							div(class="service-item-name h1") Банкеты
 							div(class="service-item-description page-text") В светлом банкетном зале хватит места  для всех гостей! А продолжить торжество можно на свежем воздухе, на большой террасе в парке.
-					div(class="service-item-photo-holder", style="background-image: url(../dummy/services/3.png)")
+					div(class="service-item-photo-holder", style="background-image: url(../dummy/services/3.jpg)")
 
 			div(class="services-footer")
 				a(href="#", class="link link--green link--large") Все услуги
@@ -126,7 +140,7 @@ block content
 			div(class="contacts-info")
 				div(class="contacts-name h2") Локация
 				div(class="contacts-title h1") Как добраться
-				div(class="contacts-description page-text") Загородный клуб «Графский» расположен в зеленой зоне левого берега реки Дон, на обширной территории в 1,4 га.
+				div(class="contacts-description page-text") Загородный клуб «Графский парк» расположен в зеленой зоне левого берега реки Дон, на обширной территории в 1,4 га.
 				div(class="contacts-routes")
 					div(class="contacts-route-item")
 						div(class="contacts-route-item-icon")
@@ -141,10 +155,10 @@ block content
 						div(class="contacts-route-item-icon")
 							include ../../prod/svg/plain.svg
 						div(class="contacts-route-item-distance")
-							span 15
+							span 48
 							|  км
 						div(class="contacts-route-item-from") от аэропорта
-						div(class="contacts-route-item-description") 20 минут на машине
+						div(class="contacts-route-item-description") 45 минут на машине
 
 			div(class="contacts-map")
 				div(class="map", data-lat="47.202997", data-lng="39.791876", data-zoom="13", data-icon="../svg/map_icon.svg")
@@ -156,7 +170,7 @@ block content
 			div(class="infrastructure-inner")
 				div(class="infrastructure-items")
 					div(class="infrastructure-item-holder")
-						a(href="#", class="link link--green link--inverse") Парк-отель на 70 номеров
+						a(href="#", class="link link--green link--inverse") Парк-отель на 67 номеров
 					div(class="infrastructure-item-holder")
 						a(href="#", class="link link--green link--inverse") Рестораный комплекс
 					div(class="infrastructure-item-holder")
@@ -173,7 +187,7 @@ block content
 						a(href="#", class="link link--green link--inverse") Летняя терраса у воды
 					div(class="infrastructure-item-holder")
 						a(href="#", class="link link--green link--inverse") Устричный бар и шампанерия
-					div(class="infrastructure-item-holder")
+					//div(class="infrastructure-item-holder")
 						a(href="#", class="link link--green link--inverse") Бильярд
 					div(class="infrastructure-item-holder")
 						a(href="#", class="link link--green link--inverse") Охраняемая парковка

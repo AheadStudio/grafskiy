@@ -88,13 +88,15 @@ html(lang="ru", class="no-js", prefix="og:http://ogp.me/ns#")
 			div(class="footer-row footer-row--info")
 				div(class="page-inner page-inner--w1 page-inner--cleared")
 					div(class="footer-contacts")
-						div(class="footer-contacts-name") Парк-отель «Графский»
+						div(class="footer-contacts-name") Загородный клуб "Графский парк"
 						div(class="footer-contacts-address")
 							| Россия, Ростов-на-Дону, 
 							br
-							| ул. Левобережная, 62  
-							a(href="#", class="link link--white") на карте
+							| ул. Левобережная, 60, 62  
+							a(href="https://goo.gl/maps/1741WSCSSjr", target="_blank", class="link link--white") на карте
 						div(class="footer-contacts-communication")
+							a(href="tel:+79381238888", class="footer-contacts-phone") +7 (938) 123-88-88
+							br
 							a(href="tel:+79381249999", class="footer-contacts-phone") +7 (938) 124 99 99
 							br
 							a(href="mailto:info@grafskiypark.com", class="link link--white footer-contacts-email") info@grafskiypark.com
@@ -108,16 +110,16 @@ html(lang="ru", class="no-js", prefix="og:http://ogp.me/ns#")
 									href: "#",
 									linkClass: "footer-menu-item--large"
 								}, {
-									name: "Президентский люкс",
+									name: "Бизнес",
 									href: "#"
 								}, {
-									name: "Свадебный люкс",
+									name: "Супериор",
 									href: "#"
 								}, {
 									name: "Люкс",
 									href: "#"
 								}, {
-									name: "Стандарт",
+									name: "Президентский",
 									href: "#"
 								}
 							]
@@ -128,23 +130,23 @@ html(lang="ru", class="no-js", prefix="og:http://ogp.me/ns#")
 							items: [
 								{
 									name: "Ресторан",
-									href: "#",
+									href: "restaurant.html",
 									linkClass: "footer-menu-item--large"
 								}, {
 									name: "Аванзал",
-									href: "#"
+									href: "restaurant.html#avanzal"
 								}, {
 									name: "Каминный зал",
-									href: "#"
+									href: "restaurant.html#kaminzal"
 								}, {
 									name: "Банкетный зал",
-									href: "#"
+									href: "hall.html"
 								}, {
 									name: "Летняя площадка",
-									href: "#"
+									href: "restaurant.html#letnyay"
 								}, {
-									name: "Лобби бар",
-									href: "#"
+									name: "Винотека",
+									href: "restaurant.html#vinoteka"
 								}
 							]
 						})
@@ -167,9 +169,6 @@ html(lang="ru", class="no-js", prefix="og:http://ogp.me/ns#")
 									href: "#"
 								}, {
 									name: "Прогулки по Дону",
-									href: "#"
-								}, {
-									name: "Рыбалка",
 									href: "#"
 								}
 							]
@@ -197,6 +196,9 @@ html(lang="ru", class="no-js", prefix="og:http://ogp.me/ns#")
 								}, {
 									name: "Фотосессии",
 									href: "#"
+								}, {
+									name: "Фитнесс-зал",
+									href: "#"
 								}
 							]
 						})
@@ -220,7 +222,7 @@ html(lang="ru", class="no-js", prefix="og:http://ogp.me/ns#")
 								br
 								| Wi-Fi
 
-						div(class="footer-feature-item footer-feature-item--temperature")
+						//div(class="footer-feature-item footer-feature-item--temperature")
 							span(class="footer-feature-item-icon")
 								include ../../prod/svg/sun.svg
 							span(class="footer-feature-item-title") 17°C
@@ -231,7 +233,7 @@ html(lang="ru", class="no-js", prefix="og:http://ogp.me/ns#")
 								include ../../prod/svg/ig.svg
 							a(href="#", class="footer-social-item", target="_blank")
 								include ../../prod/svg/fb.svg
-							a(href="#", class="footer-social-item", target="_blank")
+							//a(href="#", class="footer-social-item", target="_blank")
 								include ../../prod/svg/vk.svg
 						div(class="footer-social-title")
 							| Следуйте 
@@ -245,10 +247,11 @@ html(lang="ru", class="no-js", prefix="og:http://ogp.me/ns#")
 						items: [
 							{
 								name: "О загородном клубе",
-								href: "#"
+								href: "about.html"
 							}, {
 								name: "Схема комплекса",
-								href: "#"
+								target: "_blank",
+								href: "/dummy/schema.pdf"
 							}, {
 								name: "Предложения",
 								href: "#"
@@ -256,7 +259,7 @@ html(lang="ru", class="no-js", prefix="og:http://ogp.me/ns#")
 								name: "Карьера",
 								href: "#"
 							}, {
-								name: "Регламент оплаты",
+								name: "Правовая информация",
 								href: "#"
 							}, {
 								name: "Реквизиты",
@@ -280,10 +283,10 @@ html(lang="ru", class="no-js", prefix="og:http://ogp.me/ns#")
 							span(class="footer-creator-item-name") AheadStudio
 						| .
 						| &nbsp;
-						a(href="https://vk.com/club17191757", target="_blank", class="footer-creator-item")
+						//a(href="https://vk.com/club17191757", target="_blank", class="footer-creator-item")
 							span(class="footer-creator-item-title") Фотограф 
 							span(class="footer-creator-item-name") Евгений Денисюк
-						| .
+						//| .
 
 		div(class="header-panel")
 			div(class="header-panel-inner")
@@ -294,7 +297,7 @@ html(lang="ru", class="no-js", prefix="og:http://ogp.me/ns#")
 							items: [
 								{
 									name: "О клубе",
-									href: "#",
+									href: "about.html",
 									linkClass: "header-panel-menu-item--large"
 								}, {
 									name: "Номера",
@@ -302,7 +305,7 @@ html(lang="ru", class="no-js", prefix="og:http://ogp.me/ns#")
 									linkClass: "header-panel-menu-item--large"
 								}, {
 									name: "Ресторан",
-									href: "#",
+									href: "restaurant.html",
 									linkClass: "header-panel-menu-item--large"
 								}
 							]
@@ -342,7 +345,7 @@ html(lang="ru", class="no-js", prefix="og:http://ogp.me/ns#")
 									name: "Карьера",
 									href: "#"
 								}, {
-									name: "Регламент оплаты",
+									name: "Правовая информация",
 									href: "#"
 								}, {
 									name: "Новости",
@@ -362,9 +365,11 @@ html(lang="ru", class="no-js", prefix="og:http://ogp.me/ns#")
 						div(class="header-panel-contacts")
 							| Россия, Ростов-на-Дону, 
 							br
-							| ул. Левобережная, 60 
+							| ул. Левобережная, 60, 62 
 					div(class="header-panel-col")
 						div(class="header-panel-communication")
+							a(href="tel:+79381238888", class="header-panel-phone") +7 (938) 123-88-88
+							br
 							a(href="tel:+79381249999", class="header-panel-phone") +7 (938) 124 99 99
 							br
 							a(href="mailto:info@grafskiypark.com", class="link link--green header-panel-email") info@grafskiypark.com
