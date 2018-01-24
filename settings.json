@@ -58,6 +58,24 @@
 				"mobile": "100"
 			},
 			"bodyClass": ""
+		},
+		"relaxation": {
+			"name": "Отдых",
+			"progress": {
+				"desktop": "100",
+				"tablet": "50",
+				"mobile": "50"
+			},
+			"bodyClass": ""
+		},
+		"pool": {
+			"name": "Бассейн",
+			"progress": {
+				"desktop": "100",
+				"tablet": "50",
+				"mobile": "50"
+			},
+			"bodyClass": ""
 		}
 	}
 }

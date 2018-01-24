@@ -9,7 +9,7 @@
 		return {
 			header: {
 				init: function() {
-					var self = this; 
+					var self = this;
 
 					self.scroll.init();
 					self.menu.init();
@@ -221,12 +221,61 @@
 					}
 				},
 
+				serviceSlider: {
+					init: function() {
+						var sliders = $(".service-slider-list", $sel.body);
+
+						sliders.each(function() {
+							(function(elSlider) {
+								var itemSlider = $(".service-slider-item", elSlider),
+									navContainer = elSlider.parent(".service-slider").find(".service-slider-nav"),
+									numberSlide = navContainer.find(".service-slider-nav-counter-current"),
+									countAllSlide = navContainer.find(".service-slider-nav-counter-all");
+
+								elSlider.on("init", function(event, slick){
+									countAllSlide.text(slick.slideCount);
+								});
+
+								elSlider.slick({
+									arrows: true,
+									appendArrows: navContainer,
+									prevArrow: $(".service-slider-nav-item--prev", navContainer),
+									nextArrow: $(".service-slider-nav-item--next", navContainer),
+									infinite: true,
+									speed: 600,
+									slidesToShow: 1,
+									autoplaySpeed: 6000
+								});
+
+								itemSlider.on("mousedown", function() {
+									item = $(this);
+									item.css("cursor", "-webkit-grab");
+								})
+
+								itemSlider.on("mouseup", function() {
+									item = $(this);
+									item.css("cursor", "pointer");
+								})
+
+								elSlider.on("afterChange", function(event, slick, currentSlide, nextSlide){
+									var i = (currentSlide ? currentSlide : 0) + 1;
+									numberSlide.text(i);
+									countAllSlide.text(slick.slideCount);
+								});
+
+
+							})($(this));
+						})
+					}
+				},
+
 				init: function() {
 					var self = this;
 
 					self.big.init();
 					self.promo.init();
 					self.restaurant.init();
+					self.serviceSlider.init();
 				}
 			},
 
@@ -264,39 +313,18 @@
 							$item.addClass("show");
 						}
 					});
-					
+
 				},
 				move: function() {
 					var self = this;
 
 					self.$items.each(function() {
 						var $item = $(this);
-						
+
 					});
 				}
 			},
 
-			content: {
-				init: function() {
-					var self = this;
-
-					self.masonry();
-				},
-				masonry: function() {
-					var $photos = $(".photos")
-						.on("layoutComplete", function(e, items) {
-							$(this).addClass("show");
-						})
-						.masonry({
-							itemSelector: ".photo-item",
-							columnWidth: ".sizer",
-							gutter: ".gutter"
-						});
-					$photos.imagesLoaded().progress(function() {
-						$photos.masonry("layout");
-					});
-				}
-			}
 		};
 
 	})();
@@ -306,7 +334,5 @@
 	GRAF.sliders.init();
 
 	GRAF.icons.init();
-
-	GRAF.content.init();
 
 })(jQuery);
