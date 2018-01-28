@@ -282,6 +282,9 @@ body
 			display block
 			margin 0 auto
 
+	i
+		font-style italic
+		font-weight 600
 .photos
 	display grid
 	grid-template-columns auto auto
@@ -1682,6 +1685,8 @@ body
 		letter-spacing 5.5px
 		text-transform uppercase
 
+		white-space nowrap
+
 	.booking-icon
 		position absolute
 		left 50%
@@ -1722,6 +1727,56 @@ body
 			font-size 24px
 			letter-spacing 2.5px
 			text-transform uppercase
+
+	.booking-grid
+		display grid
+		justify-content space-between
+
+		&--col3
+			grid-template-columns minmax(auto, 335px) minmax(auto, 335px) minmax(auto, 335px)
+
+	.booking-schedule
+		box-sizing border-box
+		text-align left
+
+		.booking-schedule-title
+			margin-bottom 5px
+			font-size 26px
+			text-transform uppercase
+			letter-spacing 2.5px
+
+			&--number
+				letter-spacing 0
+				margin-top -40px
+
+		.booking-schedule-text
+			line-height 25px
+			margin-bottom 40px
+
+			b
+				font-weight 600
+
+			.price
+				display inline
+				margin-right 5px
+
+				&--bold
+					font-weight 600
+
+				&:after
+					content ""
+					display inline-block
+					width 12px
+					height 18px
+					background-repeat no-repeat
+					background-image url("../i/rub.png")
+					vertical-align middle
+
+		.booking-schedule-subtitle
+			margin-bottom 10px
+			text-transform uppercase
+			line-height 1
+
 /*** //Booking ***/
 
 
@@ -1815,6 +1870,20 @@ body
 
 		.service-item-info
 			left 0%
+
+	.service-item-price
+		width 100%
+		margin-bottom 50px
+		font-size 14px
+		font-family "AcromRegular"
+
+		.price
+			margin-right 10px
+			font-weight 600
+			color #a16849
+
+		.time
+			text-transform uppercase
 
 .services-footer
 	text-align center

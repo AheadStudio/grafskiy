@@ -76,6 +76,15 @@
 				"mobile": "50"
 			},
 			"bodyClass": ""
+		},
+		"rooms": {
+			"name": "Номера",
+			"progress": {
+				"desktop": "100",
+				"tablet": "50",
+				"mobile": "50"
+			},
+			"bodyClass": ""
 		}
 	}
 }
