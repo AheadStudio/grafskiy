@@ -1,0 +1,95 @@
+extends ../templates/base.jade
+
+block content
+    div(class="page-inner page-inner--w1")
+        div(class="page-heading")
+            h1(class="page-heading-title") Бизнес
+    
+    div(class="page-inner page-inner--w1 page-inner--promo")
+        div(class="promo promo--nodescr")
+            div(class="promo-items", data-margin="0", data-autoplay="5000" data-ratio="1.75/1", data-fit="cover", data-shadows="false", data-transitionduration="700", data-arrows="false", data-nav="false", data-width="100%", data-loop="true")
+                div(class="promo-item", data-img="../dummy/rooms/as101.png")  
+                div(class="promo-item", data-img="../dummy/rooms/lux.jpg")  
+                div(class="promo-item", data-img="../dummy/rooms/as101.png")  
+                div(class="promo-item", data-img="../dummy/rooms/aw5.png")  
+                div(class="promo-item", data-img="../dummy/rooms/as101.png")  
+                div(class="promo-item", data-img="../dummy/rooms/aw5.png") 
+            div(class="promo-nav")
+                span(class="promo-nav-item promo-nav-item--prev")
+                    include ../../prod/svg/larr.svg
+                span(class="promo-nav-counter")
+                    span(class="promo-nav-counter-current") 1
+                    span(class="promo-nav-counter-divider") 
+                    span(class="promo-nav-counter-all") &nbsp;
+                span(class="promo-nav-item promo-nav-item--next")
+                    include ../../prod/svg/rarr.svg
+                    
+    div(class="page-inner page-inner--w1")
+        div(class="page-text")
+            cite(class="big") Просторный однокомнатный номер для комфортного размещения одной или двух персон.
+
+    div(class="page-inner page-inner--w2")
+        div(class="features")
+            div(class="features-text page-text")
+                p Get your day off to the best possible start with our extraordinarily tasty buffet breakfast, served in our quiet courtyard as you bask in the pleasant early morning sunshine, or in the comfort of our elegant Wine Bar. Our superb breakfast buffet offers a selection of sweet and savoury specialities, with fresh, quality produce chosen and prepared with care to guarantee our guests a deliciously healthy start to the day.
+            div(class="features-items")
+                div(class="feature-item")
+                    span(class="feature-item-name") Площадь:
+                    span(class="feature-item-value") 35-40 м
+                div(class="feature-item")
+                    span(class="feature-item-name") Комнат:
+                    span(class="feature-item-value") 1
+                div(class="feature-item")
+                    span(class="feature-item-name") Вместимость:
+                    span(class="feature-item-value") 2 гостя
+                        
+    div(class="page-inner page-inner--w1")
+        div(class="booking")
+            div(class="booking-title") Оснащение номера
+            div(class="booking-icon")
+                include ../../prod/svg/cone.svg
+            div(class="booking-inner")
+                div(class="booking-description page-text") Каждому посетителю бассейна предоставляется в пользование 
+                    i полотенце,
+                    br
+                    | комфортная 
+                    i раздевалка 
+                    | и 
+                    i шезлонг 
+                    | рядом с бассейном.
+                div(class="booking-contacts")
+                    div(class="booking-grid booking-grid--col3")
+                        div(class="booking-schedule page-text")
+                            p Индивидуальная система кондиционирования и вентиляции
+                            p Электрический подогрев пола
+                            p Общая акустическая система
+                            p Док-станция для iPhone
+                            p Стационарный телефон
+                            p Кровать queen-size
+                        div(class="booking-schedule page-text")
+                            p Меню подушек
+                            p Дополнительное спальное место (по запросу)
+                            p Сейф
+                            p Мини-бар
+                            p Чайный набор
+                        div(class="booking-schedule page-text")
+                            p TV 55D, 3D
+                            p Душевая кабина
+                            p Тропический душ
+                            p Фен
+                            p Обсулживание номеров
+                            p Номер для некурящих
+
+    div(class="page-inner page-inner--w2")
+        div(class="booking-price")
+            div(class="booking-price-colums")
+                div(class="booking-price-col")
+                    span(class="booking-price-quantity") 6 500.-
+                    span(class="booking-price-time") В сутки за номер, включая завтрак
+                    a(href="about.html", class="btn btn--green") Забронировать
+                div(class="booking-price-col page-text")
+                    p Детская кроватка (0-3 года) предоставляется бесплатн в рядо номеров.
+                    p Дети до 8 лет могут проживать бесплатно в номере с двумя взрослыми.
+                    p Доплата за дополлнительную кровать 2000 рублей за ночь, доступная для нескольких номеров.
+                    p Размещение с домашними животными разрешено, доплата 1400 рублей в день
+            a(href="about.html", class="link link--large link--green") Все номера

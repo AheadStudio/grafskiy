@@ -1,0 +1,83 @@
+extends ../templates/base.jade
+
+block content
+    div(class="page-inner page-inner--w1")
+        div(class="page-heading")
+            h1(class="page-heading-title") Контакты
+            
+    div(class="page-inner page-inner--w1")
+        div(class="page-text")
+            cite(class="big") Загородной клуб &#171;Графский парк&#187; расположен в зеленой зоне левого берега реки Дон.
+            
+    div(class="page-inner page-inner--w1")
+        div(class="location")
+            div(class="location-position") Россия, Ростов-на-Дону, ул. Левобережная, 60, 62
+            div(class="location-list")
+                div(class="location-item")
+                    div(class="location-item-type") Отель
+                    a(href="tel:+79381238888", class="location-item-mobile") +7 (938) 123-88-88
+                    a(href="mail:hotel@grafskiypark.com", class="link link--green location-item-email") hotel@grafskiypark.com
+                div(class="location-item")
+                    div(class="location-item-type") Ресторан
+                    a(href="tel:+79381249999", class="location-item-mobile") +7 (938) 124-99-99
+                    a(href="mail:restourant@grafskiypark.com", class="link link--green location-item-email") restourant@grafskiypark.com
+                div(class="location-item")
+                    div(class="location-item-type") Мероприятия
+                    a(href="tel:+79381247777", class="location-item-mobile") +7 (938) 124-77-77
+                    a(href="mail:event@grafskiypark.com", class="link link--green location-item-email") event@grafskiypark.com
+                div(class="location-item")
+                    div(class="location-item-type") PR
+                    a(href="tel:+79381238888", class="location-item-mobile") +7 (938) 100-67-67
+                    a(href="mail:pr@grafskiypark.com", class="link link--green location-item-email") pr@grafskiypark.com
+            div(class="location-map")
+                div(class="map", data-lat="47.202997", data-lng="39.791876", data-zoom="13", data-icon="../svg/map_icon.svg")
+            div(class="contacts")
+                div(class="contacts-info")
+                    div(class="contacts-title h1") Как добраться
+                    div(class="contacts-routes")
+                        div(class="contacts-route-item")
+                            div(class="contacts-route-item-icon")
+                                include ../../prod/svg/teatre.svg
+                            div(class="contacts-route-item-distance")
+                                span 7
+                                |  км
+                            div(class="contacts-route-item-from") от центра города
+                            div(class="contacts-route-item-description") 10 минут на машине
+                            
+                        div(class="contacts-route-item")
+                            div(class="contacts-route-item-icon")
+                                include ../../prod/svg/tralebus.svg
+                            div(class="contacts-route-item-distance")
+                                span 9
+                                |  км
+                            div(class="contacts-route-item-from") от центра города
+                            div(class="contacts-route-item-description") 15 минут на машине
+
+                        div(class="contacts-route-item")
+                            div(class="contacts-route-item-icon")
+                                include ../../prod/svg/plain.svg
+                            div(class="contacts-route-item-distance")
+                                span 48
+                                |  км
+                            div(class="contacts-route-item-from") от аэропорта
+                            div(class="contacts-route-item-description") 45 минут на машине
+
+    div(class="page-inner page-inner--w1")
+        div(class="booking")
+            div(class="booking-title booking-title--big") Связаться с нами
+            form(class="form", action="#")
+                div(class="form-row form-row--w2")
+                    div(class="form-holder")
+                        input(type="text", name="name", class="form-item form-item--input", placeholder="Имя", required, data-error="Укажите Ваше имя", aria-required="true")
+                    div(class="form-holder")
+                        input(type="text", name="name", class="form-item form-item--input", placeholder="Фамилия",  required, data-error="Укажите Ваше имя", aria-required="true")
+                div(class="form-row form-row--w2")
+                    div(class="form-holder")
+                        input(type="text", name="name", class="form-item form-item--input", placeholder="E-MAIL",  required, data-error="Укажите Ваше имя", aria-required="true")
+                    div(class="form-holder")
+                        input(type="text", name="name", class="form-item form-item--input", placeholder="Телефон",  required, data-error="Укажите Ваше имя", aria-required="true")
+                div(class="form-row form-row--w1")
+                    div(class="form-holder")
+                        textarea(class="form-item form-item--textarea", placeholder="Сообщение напишите свое сообщение", rows="5")
+                div(class="form-row form-row--w1")
+                    button(type="submit", class="btn btn--green") Отправить

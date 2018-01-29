@@ -85,6 +85,42 @@
 				"mobile": "50"
 			},
 			"bodyClass": ""
+		},
+		"room_tpl": {
+			"name": "Номер без фото",
+			"progress": {
+				"desktop": "100",
+				"tablet": "50",
+				"mobile": "50"
+			},
+			"bodyClass": ""
+		},
+		"contacts": {
+			"name": "Контакты",
+			"progress": {
+				"desktop": "100",
+				"tablet": "50",
+				"mobile": "50"
+			},
+			"bodyClass": ""
+		},
+		"services": {
+			"name": "Услуги",
+			"progress": {
+				"desktop": "100",
+				"tablet": "50",
+				"mobile": "50"
+			},
+			"bodyClass": ""
+		},
+		"career": {
+			"name": "Карьера",
+			"progress": {
+				"desktop": "100",
+				"tablet": "50",
+				"mobile": "50"
+			},
+			"bodyClass": ""
 		}
 	}
 }

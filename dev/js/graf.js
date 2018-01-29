@@ -7,6 +7,20 @@
 		$sel.body = $("body", $sel.html);
 
 		return {
+			common: {
+				go: function(topPos, speed, callback) {
+					var curTopPos = $sel.window.scrollTop(),
+						diffTopPos = Math.abs(topPos - curTopPos);
+					$sel.body.add($sel.html).animate({
+						"scrollTop": topPos
+					}, speed, function() {
+						if(callback) {
+							callback();
+						}
+					});
+				}
+			},
+
 			header: {
 				init: function() {
 					var self = this;
@@ -325,6 +339,46 @@
 				}
 			},
 
+			accordion: {
+
+				init: function() {
+					var self = this,
+						$accordion = $(".accordion"),
+						$accordionItem = $(".accordion-header", $accordion);
+
+					$accordionItem.on("click", function() {
+						var $el = $(this).parent(),
+							$elHide = $accordion.find(".accordion-item.active");
+
+						if (!$el.hasClass("active")) {
+							self.show($el);
+							self.hide($elHide);
+						} else {
+							self.hide($el);
+						}
+					});
+
+				},
+
+				show: function(el) {
+					el.addClass("active");
+					setTimeout(function() {
+						el.addClass("show-content");
+						setTimeout(function() {
+							GRAF.common.go(el.offset().top-90, 500);
+						}, 100);
+					}, 300);
+				},
+
+				hide: function(el) {
+					el.removeClass("show-content");
+					setTimeout(function() {
+						el.removeClass("active");
+					}, 300);
+				}
+
+			},
+
 		};
 
 	})();
@@ -334,5 +388,7 @@
 	GRAF.sliders.init();
 
 	GRAF.icons.init();
+
+	GRAF.accordion.init();
 
 })(jQuery);
