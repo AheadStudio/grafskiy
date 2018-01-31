@@ -47,7 +47,32 @@ $transitionAnimation = cubic-bezier(0.250, 0.460, 0.450, 0.940)
 	src url("../fonts/GeoSlb712XBCBT.woff") format("woff")
 /*** //Fonts ***/
 
+/*** animate ***/
+@-webkit-keyframes popUp
+	0% {}
+	70%
+		-webkit-transform scale(1.1)
+		opacity .8
+		-webkit-animation-timing-function $transitionAnimation
+	100%
+		-webkit-transform scale(1);
+		opacity 1
 
+@keyframes popUp
+	0% {}
+	70%
+		-webkit-transform scale(1.1)
+		transform scale(1.1)
+		opacity .8
+		-webkit-animation-timing-function $transitionAnimation
+		animation-timing-function $transitionAnimation
+	100%
+		-webkit-transform scale(1)
+		transform scale(1)
+		opacity 1
+
+
+/*** //animate ***/
 
 /*** Base ***/
 html
@@ -90,6 +115,9 @@ body
 	&--w2
 		max-width 1200px
 		padding 0 25px
+
+	&--w3
+		max-width 820px
 
 	&--cleared
 		clearfix()
@@ -2313,8 +2341,12 @@ body
 
 
 /*** accordion ***/
+.career
+	margin-bottom 160px
+
 .career-columns
 	display flex
+	flex-wrap wrap
 	justify-content space-between
 	max-width 1050px
 	margin 0 auto
@@ -2332,7 +2364,7 @@ body
 			box-sizing border-box
 
 			.career-department
-				margin-bottom 25px
+				margin-bottom 20px
 				font-size 14px
 				font-family "AcromRegular"
 				letter-spacing 2px
@@ -2340,7 +2372,7 @@ body
 
 			.career-mobile
 				display block
-				margin-bottom 25px
+				margin-bottom 20px
 				font-size 18px
 				letter-spacing 2px
 
@@ -2427,3 +2459,202 @@ body
 				transform translateY(0)
 
 /*** //accordion ***/
+
+
+
+/*** news ***/
+.news
+	margin-bottom 160px
+
+.news-list
+	display grid
+	grid-template-columns 1fr 1fr
+	grid-gap 80px
+
+.news-item
+	display block
+
+	&.load-events-item
+		animation popUp 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards
+
+
+	.news-item-holder
+		display block
+		width 100%
+		margin-bottom 30px
+		cursor pointer
+		overflow hidden
+
+		.news-item-img
+			display block
+			width 100%
+			transition transform 0.3s $transitionAnimation
+
+
+	.news-item-name
+		display block
+		width 100%
+		margin-bottom 25px
+		text-align center
+		font-size 24px
+		color #336e6a
+
+	.news-item-date
+		display block
+		width 100%
+		margin-bottom 25px
+		text-align center
+		font-size 16px
+		color #336e6a
+
+	.news-item-text
+		display block
+		max-width 460px
+		margin 0 auto
+		text-align center
+		font-size 18px
+		color #336e6a
+		line-height 25px
+
+	.news-item-link
+		margin-top 40px
+		margin-left 50%
+		transform translateX(-50%)
+
+	&:hover
+		.news-item-img
+			transform scale(1.1)
+
+.load
+	position relative
+	display block
+	width 100%
+	margin-top 120px
+	height 45px
+	text-align center
+
+	.load-more
+		position absolute
+
+		left 50%
+		margin-left -25px
+
+		display block
+		width 45px
+		height 45px
+
+		cursor pointer
+
+		transition transform 0.3s $transitionAnimation
+
+		&:hover
+			transform rotate(360deg)
+
+		&:before
+			content ""
+			position absolute
+			width 100%
+			height 100%
+			top 0
+			left 0
+			background-image url(../svg/circle-arrow.svg)
+			background-repeat no-repeat
+			background-size cover
+
+		&.loading
+			animation-name spin
+			animation-duration 300ms
+			animation-iteration-count infinite
+			animation-timing-function linear
+
+
+.news-detail
+	margin-bottom 160px
+	
+	.news-date
+		margin 50px  auto 0 auto
+		font-size 16px
+		text-align center
+
+
+	.page-heading
+		margin 23px 0
+
+	.news-detail
+		p
+			margin-bottom 30px
+
+	.news-detail-pagination
+		display flex
+		justify-content space-between
+		align-items center
+		margin-top 90px
+		padding 30px 0
+		border-top 1px solid black
+		border-bottom 1px solid black
+
+		.news-detail-pagination-prev
+		.news-detail-pagination-next
+			position relative
+			display block
+			color #336E6A
+			text-decoration none
+			box-sizing border-box
+
+			&:hover
+				&:before
+					transform translateX(-10px)
+				&:after
+					transform translateX(10px)
+
+		.news-detail-pagination-prev
+			padding-left 77px
+
+			&:before
+				content ""
+				position absolute
+				left 0
+				top 50%
+				margin-top -7.5px
+				display block
+				width 45px
+				height 15px
+				background-image url("../svg/larr.svg")
+				background-size contain
+				background-repeat no-repeat
+				transition transform 0.3s $transitionAnimation
+
+
+
+		.news-detail-pagination-next
+			padding-right 77px
+
+			&:after
+				content ""
+				position absolute
+				right 0
+				top 50%
+				margin-top -7.5px
+				display block
+				width 45px
+				height 15px
+				background-image url("../svg/rarr.svg")
+				background-size contain
+				background-repeat no-repeat
+				transition transform 0.3s $transitionAnimation
+
+
+		.news-detail-pagination-text
+			color #336E6A
+			font-size 16px
+			line-height 25px
+			font-family "GeoSlab712LightItalic"
+			text-transform uppercase
+
+		.news-detail-pagination-delimiter
+			display block
+			height 85px
+			width 1px
+			background #000
+
+/*** //news ***/

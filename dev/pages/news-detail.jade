@@ -1,0 +1,57 @@
+extends ../templates/base.jade
+
+block content
+    div(class="page-inner page-inner--w3")
+        div(class="promo promo--nodescr")
+            div(class="promo-items", data-margin="0", data-autoplay="5000" data-ratio="1.75/1", data-fit="cover", data-shadows="false", data-transitionduration="700", data-arrows="false", data-nav="false", data-width="100%", data-loop="true")
+                div(class="promo-item", data-img="../dummy/chrismas.png")  
+                div(class="promo-item", data-img="../dummy/chrismas.png")  
+                div(class="promo-item", data-img="../dummy/chrismas.png")  
+                div(class="promo-item", data-img="../dummy/chrismas.png")  
+                div(class="promo-item", data-img="../dummy/chrismas.png")  
+                div(class="promo-item", data-img="../dummy/chrismas.png") 
+            div(class="promo-nav")
+                span(class="promo-nav-item promo-nav-item--prev")
+                    include ../../prod/svg/larr.svg
+                span(class="promo-nav-counter")
+                    span(class="promo-nav-counter-current") 1
+                    span(class="promo-nav-counter-divider") 
+                    span(class="promo-nav-counter-all") &nbsp;
+                span(class="promo-nav-item promo-nav-item--next")
+                    include ../../prod/svg/rarr.svg
+
+    div(class="page-inner page-inner--w3")
+        div(class="news-detail")
+            div(class="news-date") 12 января 2018
+            div(class="page-heading")
+                h1(class="page-heading-title") РОЖДЕСТВО В 
+                    br
+                    | «графском парке»
+                    br
+                    | 7 января, 18:00
+            div(class="news-detail")
+                div(class="page-text")
+                    p Рождество в России принято встречать дома, но иногда можно отойти от традиций, чтобы провести этот добрый и светлый праздник по-особенному. 7 января «Долина Лефкадия» приглашает вас на рождественский вечер в ресторан «Графский парк». Специальное для праздничного ужина наш шеф-повар подготовил оригинальное меню, в которое войдут:
+                    ul 
+                        li – террин из корнеплодов с кремом из домашнего сыра и орехов;
+                        li – салат с маринованным языком и заправкой из хрена и домашнего майонеза;
+                        li – камамбер, запечённый с мандаринами и ликёром;
+                        li – жареный цыплёнок с кукурузой;
+                        li – десерт из местной рикотты с печёным яблоком и мандаринами.
+                    p Данное меню будет доступно в каминном зале. В зоне ресторана при баре в этот день будет представлено традиционное меню.
+                    p Внимание! Количество мест в каминном зале ресторана «Графский парк» ограничено. Поэтому бронируйте столик заранее: 8-961-534-08-76. Бронирование возможно до 23:00 06.01.2018 г.
+                    p Также в рамках рождественского ужина гостей «Графский парк» ждёт особое предложение на специально подобранные к событию вина производства «Графский парк».
+                    p Стоимость рождественского меню: 1500 руб./чел. Напитки не включены.
+                    p Начало праздничного ужина: с 18:00.
+                    p Кстати, если вы приедете в «Графский парк» на Рождество вместе с детьми, то сможете воспользоваться услугами нашей детской комнаты и няни.
+                    p Давайте вместе встретим это Рождество!
+            div(class="news-detail-pagination")
+                a(href="#", class="news-detail-pagination-prev")
+                    div(class="news-detail-pagination-text") Новый год в
+                        br
+                        | «Графском парке»
+                span(class="news-detail-pagination-delimiter")
+                a(href="#", class="news-detail-pagination-next")
+                    div(class="news-detail-pagination-text") Новый год в
+                        br
+                        | «Графском парке»

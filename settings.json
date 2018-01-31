@@ -121,6 +121,43 @@
 				"mobile": "50"
 			},
 			"bodyClass": ""
+		},
+		"news": {
+			"name": "Новости",
+			"progress": {
+				"desktop": "100",
+				"tablet": "50",
+				"mobile": "50"
+			},
+			"bodyClass": ""
+		},
+		"news_load": {
+			"name": "Новости подгрузить",
+			"progress": {
+				"desktop": "100",
+				"tablet": "50",
+				"mobile": "50"
+			},
+			"bodyClass": "",
+			"hidden": true
+		},
+		"news-detail": {
+			"name": "Новость",
+			"progress": {
+				"desktop": "100",
+				"tablet": "50",
+				"mobile": "50"
+			},
+			"bodyClass": ""
+		},
+		"special-offers": {
+			"name": "Специальные предложения",
+			"progress": {
+				"desktop": "100",
+				"tablet": "50",
+				"mobile": "50"
+			},
+			"bodyClass": ""
 		}
 	}
 }

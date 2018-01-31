@@ -339,45 +339,77 @@
 				}
 			},
 
-			accordion: {
+			page: {
 
-				init: function() {
-					var self = this,
-						$accordion = $(".accordion"),
-						$accordionItem = $(".accordion-header", $accordion);
+				ajaxLoader: function() {
+					$sel.body.on("click", ".load-more", function(event) {
+						var $linkAddress = $(this),
+							href = $linkAddress.attr("href"),
+							$container = $($linkAddress.data("container"));
 
-					$accordionItem.on("click", function() {
-						var $el = $(this).parent(),
-							$elHide = $accordion.find(".accordion-item.active");
+						$linkAddress.addClass("loading");
 
-						if (!$el.hasClass("active")) {
-							self.show($el);
-							self.hide($elHide);
-						} else {
-							self.hide($el);
-						}
-					});
+						(function(href, $container) {
+							$.ajax({
+								url: href,
+								success: function(data) {
+									var $data = $(data).addClass("load-events-item");
+										$container.append($data);
+									setTimeout(function() {
+										GRAF.common.go($container.find(".load-events-item").offset().top-150, 600);
+										$container.find(".load-events-item").removeClass("load-events-item");
+										$linkAddress.removeClass("loading");
+									}, 600);
+									GRAF.reload();
+								}
+							})
+						})(href, $container);
+						event.preventDefault();
+					})
 
 				},
 
-				show: function(el) {
-					el.addClass("active");
-					setTimeout(function() {
-						el.addClass("show-content");
+				accordion: {
+
+					init: function() {
+						var self = this,
+							$accordion = $(".accordion"),
+							$accordionItem = $(".accordion-header", $accordion);
+
+						$accordionItem.on("click", function() {
+							var $el = $(this).parent(),
+								$elHide = $accordion.find(".accordion-item.active");
+
+							if (!$el.hasClass("active")) {
+								self.show($el);
+								self.hide($elHide);
+							} else {
+								self.hide($el);
+							}
+						});
+
+					},
+
+					show: function(el) {
+						el.addClass("active");
 						setTimeout(function() {
-							GRAF.common.go(el.offset().top-90, 500);
-						}, 100);
-					}, 300);
+							el.addClass("show-content");
+							setTimeout(function() {
+								GRAF.common.go(el.offset().top-90, 500);
+							}, 100);
+						}, 300);
+					},
+
+					hide: function(el) {
+						el.removeClass("show-content");
+						setTimeout(function() {
+							el.removeClass("active");
+						}, 300);
+					}
+
 				},
-
-				hide: function(el) {
-					el.removeClass("show-content");
-					setTimeout(function() {
-						el.removeClass("active");
-					}, 300);
-				}
-
 			},
+
 
 		};
 
@@ -389,6 +421,12 @@
 
 	GRAF.icons.init();
 
-	GRAF.accordion.init();
+	GRAF.page.accordion.init();
+	GRAF.page.ajaxLoader();
+
+	GRAF.reload = function() {
+		GRAF.maps.init();
+		GRAF.sliders.init();
+	}
 
 })(jQuery);

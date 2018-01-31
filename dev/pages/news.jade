@@ -1,0 +1,53 @@
+extends ../templates/base.jade
+
+block content
+    div(class="page-inner page-inner--w1")
+        div(class="page-heading")
+            h1(class="page-heading-title") Новости
+    
+    div(class="page-inner page-inner--w1")
+        div(class="news")
+            div(class="news-list", id="news-list")
+                div(class="news-item")
+                    div(class="news-item-holder")
+                        img(class="news-item-img", src="../dummy/news/news-1.png")
+                    div(class="news-item-name") Винотека
+                    div(class="news-item-date") 13 января 2018
+                    div(class="news-item-text") В винотеке «Графского парка» богатое собрание сочинений лучших виноделов Старого и Нового Света. Благодаря специальному прибору CORAVIN вы можете каждый вечер расширять энологической кругозор и изучать элитные вина понемногу, не откупоривая бутылку, а растягивая удовольствие от напитка на несколько вечеров.
+                div(class="news-item")
+                    div(class="news-item-holder")
+                        img(class="news-item-img", src="../dummy/news/news-2.png")
+                    div(class="news-item-name") Старый новый год
+                    div(class="news-item-date") 12 января 2018
+                    div(class="news-item-text") Старый Новый год — это день, когда нужно проводить старые мысли, старое настроение и открыть свое сердце для чего-то нового и приятного. 
+                    a(href="news-detail.html", class="link link--large link--green news-item-link") Подробнее
+                div(class="news-item")
+                    div(class="news-item-holder")
+                        img(class="news-item-img", src="../dummy/news/news-3.png")
+                    div(class="news-item-name") «CABARET COTTON»
+                        br
+                        | в новогоднюю ночь
+                    div(class="news-item-date") 13 января 2018
+                    div(class="news-item-text") В Новогоднюю ночь в загородном клубе «Графский Парк» вас ждёт банкет высокой кухни и шикарная шоу-программа «CABARET COTTON».
+                div(class="news-item")
+                    div(class="news-item-holder")
+                        img(class="news-item-img", src="../dummy/news/news-4.png")
+                    div(class="news-item-name") Hовинки меню от шеф-повара
+                    div(class="news-item-date") 17 сентября 2017
+                    div(class="news-item-text") А мы продолжаем знакомить вас с космополитичной кухней нашего ресторана. Том Ям - обжигающе острый тайский суп с судаком и креветками, подаётся с пиалой риса. Блюдо непременно порадует любителей пряной восточной кухни.
+                div(class="news-item")
+                    div(class="news-item-holder")
+                        img(class="news-item-img", src="../dummy/news/news-5.png")
+                    div(class="news-item-name") Новый год в «Графском парке»
+                    div(class="news-item-date") 25 декабря 2017
+                    div(class="news-item-text") В Новогоднюю ночь в загородном клубе «Графский Парк» вас ждёт банкет высокой кухни и шикарная шоу-программа «CABARET COTTON». Рады вам сообщить, что ещё остались свободные места по сниженной цене!
+                div(class="news-item")
+                    div(class="news-item-holder")
+                        img(class="news-item-img", src="../dummy/news/news-6.png")
+                    div(class="news-item-name") Открытие осенного сезона
+                    div(class="news-item-date") 17 сентября 2017
+                    div(class="news-item-text") Шеф-повар Алексей Краковский готовит сезонные блюда из дичи.
+            div(class="load")        
+                a(href="news_load.html", data-container="#news-list", class="link load-more")
+
+        
