@@ -63,8 +63,8 @@
 			"name": "Отдых",
 			"progress": {
 				"desktop": "100",
-				"tablet": "50",
-				"mobile": "50"
+				"tablet": "100",
+				"mobile": "100"
 			},
 			"bodyClass": ""
 		},
@@ -72,8 +72,8 @@
 			"name": "Бассейн",
 			"progress": {
 				"desktop": "100",
-				"tablet": "50",
-				"mobile": "50"
+				"tablet": "100",
+				"mobile": "100"
 			},
 			"bodyClass": ""
 		},
@@ -81,8 +81,8 @@
 			"name": "Номера",
 			"progress": {
 				"desktop": "100",
-				"tablet": "50",
-				"mobile": "50"
+				"tablet": "100",
+				"mobile": "100"
 			},
 			"bodyClass": ""
 		},
@@ -90,8 +90,8 @@
 			"name": "Номер без фото",
 			"progress": {
 				"desktop": "100",
-				"tablet": "50",
-				"mobile": "50"
+				"tablet": "100",
+				"mobile": "100"
 			},
 			"bodyClass": ""
 		},
@@ -99,8 +99,8 @@
 			"name": "Контакты",
 			"progress": {
 				"desktop": "100",
-				"tablet": "50",
-				"mobile": "50"
+				"tablet": "100",
+				"mobile": "100"
 			},
 			"bodyClass": ""
 		},
@@ -108,8 +108,8 @@
 			"name": "Услуги",
 			"progress": {
 				"desktop": "100",
-				"tablet": "50",
-				"mobile": "50"
+				"tablet": "100",
+				"mobile": "100"
 			},
 			"bodyClass": ""
 		},
@@ -117,8 +117,8 @@
 			"name": "Карьера",
 			"progress": {
 				"desktop": "100",
-				"tablet": "50",
-				"mobile": "50"
+				"tablet": "90",
+				"mobile": "90"
 			},
 			"bodyClass": ""
 		},
@@ -126,8 +126,8 @@
 			"name": "Новости",
 			"progress": {
 				"desktop": "100",
-				"tablet": "50",
-				"mobile": "50"
+				"tablet": "100",
+				"mobile": "100"
 			},
 			"bodyClass": ""
 		},
@@ -145,8 +145,8 @@
 			"name": "Новость",
 			"progress": {
 				"desktop": "100",
-				"tablet": "50",
-				"mobile": "50"
+				"tablet": "100",
+				"mobile": "100"
 			},
 			"bodyClass": ""
 		},
@@ -154,8 +154,8 @@
 			"name": "Специальные предложения",
 			"progress": {
 				"desktop": "100",
-				"tablet": "50",
-				"mobile": "50"
+				"tablet": "100",
+				"mobile": "100"
 			},
 			"bodyClass": ""
 		}

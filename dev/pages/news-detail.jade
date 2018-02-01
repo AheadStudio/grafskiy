@@ -2,25 +2,6 @@ extends ../templates/base.jade
 
 block content
     div(class="page-inner page-inner--w3")
-        div(class="promo promo--nodescr")
-            div(class="promo-items", data-margin="0", data-autoplay="5000" data-ratio="1.75/1", data-fit="cover", data-shadows="false", data-transitionduration="700", data-arrows="false", data-nav="false", data-width="100%", data-loop="true")
-                div(class="promo-item", data-img="../dummy/chrismas.png")  
-                div(class="promo-item", data-img="../dummy/chrismas.png")  
-                div(class="promo-item", data-img="../dummy/chrismas.png")  
-                div(class="promo-item", data-img="../dummy/chrismas.png")  
-                div(class="promo-item", data-img="../dummy/chrismas.png")  
-                div(class="promo-item", data-img="../dummy/chrismas.png") 
-            div(class="promo-nav")
-                span(class="promo-nav-item promo-nav-item--prev")
-                    include ../../prod/svg/larr.svg
-                span(class="promo-nav-counter")
-                    span(class="promo-nav-counter-current") 1
-                    span(class="promo-nav-counter-divider") 
-                    span(class="promo-nav-counter-all") &nbsp;
-                span(class="promo-nav-item promo-nav-item--next")
-                    include ../../prod/svg/rarr.svg
-
-    div(class="page-inner page-inner--w3")
         div(class="news-detail")
             div(class="news-date") 12 января 2018
             div(class="page-heading")
@@ -29,6 +10,25 @@ block content
                     | «графском парке»
                     br
                     | 7 января, 18:00
+                    
+            div(class="promo promo--nodescr")
+                div(class="promo-items", data-margin="0", data-autoplay="5000" data-ratio="1.75/1", data-fit="cover", data-shadows="false", data-transitionduration="700", data-arrows="false", data-nav="false", data-width="100%", data-loop="true")
+                    div(class="promo-item", data-img="../dummy/chrismas.png")  
+                    div(class="promo-item", data-img="../dummy/chrismas.png")  
+                    div(class="promo-item", data-img="../dummy/chrismas.png")  
+                    div(class="promo-item", data-img="../dummy/chrismas.png")  
+                    div(class="promo-item", data-img="../dummy/chrismas.png")  
+                    div(class="promo-item", data-img="../dummy/chrismas.png") 
+                div(class="promo-nav")
+                    span(class="promo-nav-item promo-nav-item--prev")
+                        include ../../prod/svg/larr.svg
+                    span(class="promo-nav-counter")
+                        span(class="promo-nav-counter-current") 1
+                        span(class="promo-nav-counter-divider") 
+                        span(class="promo-nav-counter-all") &nbsp;
+                    span(class="promo-nav-item promo-nav-item--next")
+                        include ../../prod/svg/rarr.svg
+
             div(class="news-detail")
                 div(class="page-text")
                     p Рождество в России принято встречать дома, но иногда можно отойти от традиций, чтобы провести этот добрый и светлый праздник по-особенному. 7 января «Долина Лефкадия» приглашает вас на рождественский вечер в ресторан «Графский парк». Специальное для праздничного ужина наш шеф-повар подготовил оригинальное меню, в которое войдут:
@@ -52,6 +52,6 @@ block content
                         | «Графском парке»
                 span(class="news-detail-pagination-delimiter")
                 a(href="#", class="news-detail-pagination-next")
-                    div(class="news-detail-pagination-text") Новый год в
+                    div(class="news-detail-pagination-text") Открытие осеннего
                         br
-                        | «Графском парке»
+                        | сезона фазана

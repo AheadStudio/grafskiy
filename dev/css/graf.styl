@@ -136,7 +136,7 @@ body
 	line-height 1
 	text-decoration none
 
-	transition .3s color $transitionAnimation, .3s border-bottom-color $transitionAnimation
+	transition .3s color $transitionAnimation, .3s border-bottom-color $transitionAnimation, 0.3s box-shadow $transitionAnimation
 
 	.link-text
 	.link-icon
@@ -161,6 +161,7 @@ body
 		color inherit
 
 	&--white
+
 		border-bottom 1px solid rgba(255, 255, 255, 0.5)
 
 		color #FFF
@@ -169,7 +170,7 @@ body
 			border-bottom-color rgba(255, 255, 255, 0)
 
 	&--green
-		border-bottom 1px solid rgba(52, 110, 107, 0.5)
+		box-shadow inset 0 -2.9555px transparent, inset 0 -1px rgba(52, 110, 107, 0.5)
 
 		color #346E6A
 
@@ -185,6 +186,23 @@ body
 
 			&:hover
 				border-bottom-color #A16849
+
+		&:hover
+			box-shadow inset 0 -2.9555px transparent, inset 0 -1px #A16849
+
+			color #A16849
+
+	&--darkgreen
+		padding-bottom 8px
+		box-sizing border-box
+		border-bottom 1px solid #346e6b
+		color #346e6b
+
+		&.link--large
+			font-size 14px
+			font-family "GeoSlab712LightItalic"
+			text-transform uppercase
+			letter-spacing 6px
 
 		&:hover
 			border-bottom-color #A16849
@@ -260,10 +278,10 @@ body
 					text-transform capitalize
 
 	cite
-		margin 50px 0
+		margin 40px 0 50px 0px
 
 		display block
-		padding 0 200px
+		padding 0 110px
 
 		font-family "GeoSlab712LightItalic"
 		text-align center
@@ -285,23 +303,24 @@ body
 			text-transform uppercase
 
 	dl
-		display grid
-		grid-gap 10px 15px
-		grid-template-columns minmax(0, max-content) 1fr
-		align-items baseline
 		margin-bottom 30px
 
 		&:last-child
 			margin-bottom 0
 
 		dt
-			line-height 1
+			float left
+			padding-right 10px
+			line-height 31px
 			font-family "AcromRegular"
 			font-size 14px
 			text-transform uppercase
+			letter-spacing 2px
 
 		dd
-			line-height 1
+			line-height 26px
+			padding-bottom 10px
+			font-family "GeoSlab712LightItalic"
 			&:last-child
 				margin-bottom 0
 
@@ -351,16 +370,18 @@ body
 			grid-area area4
 
 		img
-			margin 0 auto 20px auto
+			margin 0 auto 45px auto
 
 			display block
 			width 100%
 			height auto
 
 		.photo-item-title
-			margin-bottom 30px
+			margin-bottom 15px
 			font-family GeoSlab712LightItalic
 			font-size 18px
+			text-transform uppercase
+			letter-spacing 4px
 
 	.sizer
 		width 45%
@@ -522,7 +543,7 @@ body
 			transform rotate(45deg) translateY(10px) translateX(2px)
 
 .page-heading
-	margin 50px 0
+	margin 50px 0 40px 0
 
 	text-align center
 
@@ -1316,6 +1337,32 @@ body
 
 
 /*** Rooms ***/
+
+.rooms
+	margin-top 80px
+
+	.service-item
+		.service-item-info
+			.service-item-info-inner
+				padding  0 35px
+
+		.service-item-description
+			dl
+				grid-gap 10px 15px
+
+	.booking
+		margin 155px 0 85px 0
+
+	.page-heading
+		margin-bottom 55px
+
+	.rooms-text
+		max-width 1015px
+		margin 0 auto
+		margin-bottom 50px
+		font-size 18px
+
+
 .slider
 	margin 150px 0 100px 0
 
@@ -1520,29 +1567,34 @@ body
 		&:first-letter
 			font-size 54px
 
-	.features-items
-		padding 12px 0 0 65%
+.features-items
+	padding 12px 0 0 65%
 
-		.feature-item
-			margin-bottom 20px
+.feature-item
+	margin-bottom 20px
+
+	&:last-child
+		margin-bottom 0
+
+	.feature-item-name
+		margin-right 10px
+
+		font-family "AcromRegular"
+		font-size 14px
+		line-height 18px
+		text-transform uppercase
+
+	.feature-item-value
+		font-family "GeoSlab712LightItalic"
+		font-size 18px
+
+		&--block
+			display block
+			margin-top 15px
+			margin-bottom 5px
 
 			&:last-child
-				margin-bottom 0
-
-			.feature-item-name
-				margin-right 10px
-
-				font-family "AcromRegular"
-				font-size 14px
-				line-height 18px
-				text-transform uppercase
-
-			.feature-item-value
-				font-family "GeoSlab712LightItalic"
-				font-size 18px
-
-				&--block
-					display block
+				margin-top 0
 
 .menu
 	margin 100px 0
@@ -1696,7 +1748,7 @@ body
 /*** Booking ***/
 .booking
 	position relative
-	margin 100px 0
+	margin 120px 0 145px 0
 
 	box-sizing border-box
 	width 100%
@@ -1742,12 +1794,16 @@ body
 			max-width 100%
 
 	.booking-inner
-		padding 100px 100px
+		padding 70px 100px
+		box-sizing border-box
 
 		text-align center
 
+		&--notext
+			padding 95px 100px 40px 100px
+
 	.booking-description
-		margin-bottom 30px
+		margin-bottom 65px
 
 	.booking-contacts
 		.booking-contacts-phone
@@ -1771,15 +1827,18 @@ body
 		&--col3
 			grid-template-columns minmax(auto, 335px) minmax(auto, 335px) minmax(auto, 335px)
 
+		&--col2
+			grid-template-columns minmax(auto, 390px) minmax(auto, 390px)
+
 	.booking-schedule
 		box-sizing border-box
 		text-align left
 
 		.booking-schedule-title
 			margin-bottom 5px
-			font-size 26px
+			font-size 24px
 			text-transform uppercase
-			letter-spacing 2.5px
+			letter-spacing 4px
 
 			&--number
 				letter-spacing 0
@@ -1836,7 +1895,7 @@ body
 	display flex
 	justify-content space-between
 
-	margin-bottom 75px
+	margin-bottom 95px
 
 
 	&:last-child
@@ -1849,7 +1908,7 @@ body
 		display block
 
 	.service-item-photo-holder
-		width 57%
+		width 60%
 		overflow hidden
 
 		background-size cover
@@ -1864,7 +1923,7 @@ body
 
 	.service-item-slider-holder
 		position relative
-		width 57%
+		width 60%
 
 	.service-slider
 		cursor pointer
@@ -1878,7 +1937,7 @@ body
 	.service-item-info
 		position relative
 		display block
-		width 37%
+		width 37.5%
 
 		.service-item-info-inner
 			position absolute
@@ -1892,15 +1951,14 @@ body
 			width 100%
 			padding 100px 50px
 
+			.link
+				margin-top 35px
+
 		.service-item-name
 			margin-bottom 20px
 
 	&--left
 		flex-flow row-reverse
-
-		.service-item-photo-holder
-			float left
-
 
 	&--right
 		flex-flow row
@@ -1912,7 +1970,7 @@ body
 
 	.service-item-price
 		width 100%
-		margin-bottom 50px
+		margin-bottom 30px
 		font-size 14px
 		font-family "AcromRegular"
 
@@ -2093,9 +2151,10 @@ body
 			border-right 1px solid #346E6A
 
 			&:first-child
-				padding-left none
+				padding-left 0
+				
 			&:last-child
-				border-right none
+				border-right 0
 
 			.contacts-route-item-icon
 				min-height 45px
@@ -2129,7 +2188,7 @@ body
 /*** relaxation ***/
 
 .relaxation
-	margin-top 85px
+	margin-top 95px
 
 	.service-item
 		margin-bottom 190px
@@ -2140,10 +2199,7 @@ body
 /*** room template ***/
 
 .booking-price
-	margin-left auto
-	margin-right auto
-	margin-top 125px
-	margin-bottom 140px
+	margin 125px auto 90px auto
 	max-width 1035px
 
 	.link
@@ -2171,6 +2227,8 @@ body
 		font-family "GeoSlab712Medium"
 
 	.booking-price-time
+		display inline-block
+		max-width 165px
 		line-height 25px
 		vertical-align bottom
 		font-family "GeoSlab712LightItalic"
@@ -2178,6 +2236,7 @@ body
 		text-transform lowercase
 
 	.btn
+		width 100%
 		max-width 320px
 		padding 20px 50px
 		margin-top 30px
@@ -2195,6 +2254,7 @@ body
 
 .location
 	margin-top 105px
+	margin-bottom 215px
 
 	.location-position
 		width 100%
@@ -2295,42 +2355,48 @@ body
 				width 100%
 				padding 20px 0 5px 0
 				box-sizing border-box
-				border-bottom 1px solid #346e6b
-				font-size 18px
+				box-shadow inset 0 -2.9555px #fff, inset 0 -4px #346e6b
+				font-size 17px
 				color #336e6a
 				font-family "GeoSlab712Light"
-				transition border-bottom-color 0.3s $transitionAnimation
+				transition box-shadow 0.3s $transitionAnimation
 
 				&::-webkit-input-placeholder
 					transform translateY(-15px)
 					font-family "GeoSlab712LightItalic"
 					text-transform uppercase
 					transition transform 0.3s $transitionAnimation, font-size 0.3s $transitionAnimation
+					letter-spacing 2px
 
 				&:-moz-placeholder
 					transform translateY(-15px)
 					font-family "GeoSlab712LightItalic"
 					text-transform uppercase
 					transition transform 0.3s $transitionAnimation, font-size 0.3s $transitionAnimation
+					letter-spacing 2px
 
 				&:focus
-					border-bottom 1.5px solid #000
+					box-shadow inset 0 -2.9555px #fff, inset 0 -5px #346e6b
+
 
 					&::-webkit-input-placeholder
 						opacity 1
 						transform translateY(-20px)
-						font-size 12px
+						font-size 11px
 
 					&:-moz-placeholder
 						opacity 1
 						transform translateY(-20px)
-						font-size 12px
+						font-size 11px
 
 				&:hover
 					border-bottom-color #000
 
 			&--textarea
 				resize none
+
+				&:before
+					content ""
 
 		.btn
 			padding 15px 45px 13px 45px
@@ -2464,12 +2530,13 @@ body
 
 /*** news ***/
 .news
+	margin-top 80px
 	margin-bottom 160px
 
 .news-list
 	display grid
 	grid-template-columns 1fr 1fr
-	grid-gap 80px
+	grid-gap 90px 110px
 
 .news-item
 	display block
@@ -2481,7 +2548,7 @@ body
 	.news-item-holder
 		display block
 		width 100%
-		margin-bottom 30px
+		margin-bottom 40px
 		cursor pointer
 		overflow hidden
 
@@ -2494,10 +2561,13 @@ body
 	.news-item-name
 		display block
 		width 100%
-		margin-bottom 25px
+		margin-bottom 15px
 		text-align center
+		text-transform uppercase
+		font-family "GeoSlab712LightItalic"
 		font-size 24px
 		color #336e6a
+		letter-spacing 4px
 
 	.news-item-date
 		display block
@@ -2514,10 +2584,10 @@ body
 		text-align center
 		font-size 18px
 		color #336e6a
-		line-height 25px
+		line-height 30px
 
 	.news-item-link
-		margin-top 40px
+		margin-top 15px
 		margin-left 50%
 		transform translateX(-50%)
 
@@ -2570,7 +2640,7 @@ body
 
 .news-detail
 	margin-bottom 160px
-	
+
 	.news-date
 		margin 50px  auto 0 auto
 		font-size 16px
@@ -2589,7 +2659,7 @@ body
 		justify-content space-between
 		align-items center
 		margin-top 90px
-		padding 30px 0
+		padding 27px 0
 		border-top 1px solid black
 		border-bottom 1px solid black
 
@@ -2608,7 +2678,7 @@ body
 					transform translateX(10px)
 
 		.news-detail-pagination-prev
-			padding-left 77px
+			padding-left 65px
 
 			&:before
 				content ""
@@ -2627,7 +2697,7 @@ body
 
 
 		.news-detail-pagination-next
-			padding-right 77px
+			padding-right 65px
 
 			&:after
 				content ""
@@ -2650,6 +2720,7 @@ body
 			line-height 25px
 			font-family "GeoSlab712LightItalic"
 			text-transform uppercase
+			letter-spacing 5px
 
 		.news-detail-pagination-delimiter
 			display block

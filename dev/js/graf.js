@@ -256,7 +256,7 @@
 									prevArrow: $(".service-slider-nav-item--prev", navContainer),
 									nextArrow: $(".service-slider-nav-item--next", navContainer),
 									infinite: true,
-									speed: 600,
+									speed: 400,
 									slidesToShow: 1,
 									autoplaySpeed: 6000
 								});
@@ -408,6 +408,21 @@
 					}
 
 				},
+
+				form: {
+
+					init: function() {
+						var self = this;
+
+						self.placeholder();
+					},
+
+					placeholder: function() {
+						$("textarea").attr("placeholder", "Сообщение" + "\n" + "напишите свое сообщение");
+					},
+
+				}
+
 			},
 
 
@@ -423,6 +438,7 @@
 
 	GRAF.page.accordion.init();
 	GRAF.page.ajaxLoader();
+	GRAF.page.form.init();
 
 	GRAF.reload = function() {
 		GRAF.maps.init();

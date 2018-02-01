@@ -65,6 +65,8 @@ block content
     div(class="page-inner page-inner--w1")
         div(class="booking")
             div(class="booking-title booking-title--big") Связаться с нами
+            div(class="booking-icon")
+                include ../../prod/svg/cone.svg
             form(class="form", action="#")
                 div(class="form-row form-row--w2")
                     div(class="form-holder")
@@ -78,6 +80,6 @@ block content
                         input(type="text", name="name", class="form-item form-item--input", placeholder="Телефон",  required, data-error="Укажите Ваше имя", aria-required="true")
                 div(class="form-row form-row--w1")
                     div(class="form-holder")
-                        textarea(class="form-item form-item--textarea", placeholder="Сообщение напишите свое сообщение", rows="5")
+                        textarea(class="form-item form-item--textarea", rows="5")
                 div(class="form-row form-row--w1")
                     button(type="submit", class="btn btn--green") Отправить

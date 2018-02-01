@@ -48,15 +48,7 @@ block content
             div(class="booking-title") Оснащение номера
             div(class="booking-icon")
                 include ../../prod/svg/cone.svg
-            div(class="booking-inner")
-                div(class="booking-description page-text") Каждому посетителю бассейна предоставляется в пользование 
-                    i полотенце,
-                    br
-                    | комфортная 
-                    i раздевалка 
-                    | и 
-                    i шезлонг 
-                    | рядом с бассейном.
+            div(class="booking-inner booking-inner--notext")
                 div(class="booking-contacts")
                     div(class="booking-grid booking-grid--col3")
                         div(class="booking-schedule page-text")
@@ -84,7 +76,7 @@ block content
         div(class="booking-price")
             div(class="booking-price-colums")
                 div(class="booking-price-col")
-                    span(class="booking-price-quantity") 6 500.-
+                    span(class="booking-price-quantity") 6 500.&#8211;
                     span(class="booking-price-time") В сутки за номер, включая завтрак
                     a(href="about.html", class="btn btn--green") Забронировать
                 div(class="booking-price-col page-text")
@@ -92,4 +84,5 @@ block content
                     p Дети до 8 лет могут проживать бесплатно в номере с двумя взрослыми.
                     p Доплата за дополлнительную кровать 2000 рублей за ночь, доступная для нескольких номеров.
                     p Размещение с домашними животными разрешено, доплата 1400 рублей в день
-            a(href="about.html", class="link link--large link--green") Все номера
+            a(href="about.html", class="link link--large link--darkgreen") Все номера
+            
