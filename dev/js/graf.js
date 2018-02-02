@@ -73,7 +73,7 @@
 						var self = this;
 
 						self.$panel.css("display", "block");
-						$sel.html.css("overflow", "hidden");
+						$sel.html.addClass("menu-open-html");
 						setTimeout(function() {
 							$sel.body.addClass("menu-open");
 							self.isOpen = true;
@@ -84,7 +84,7 @@
 						var self = this;
 
 						$sel.body.removeClass("menu-open");
-						$sel.html.css("overflow", "auto");
+						$sel.html.removeClass("menu-open-html");
 						setTimeout(function() {
 							self.$panel.css("display", "none");
 							self.isOpen = false;
