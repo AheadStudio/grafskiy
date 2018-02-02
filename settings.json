@@ -18,9 +18,9 @@
         "removeCopyrights": false
 	},
 	"ftp": {
-		"host": "wemakesites.ru",
-		"login": "wemakesites",
-		"password": "wemakesites-root"
+        "host": "wemakesites.ru",
+        "login": "wms",
+        "password": "7A4m8C7q"
 	},
 	"pages": {
 		"home": {
@@ -117,8 +117,8 @@
 			"name": "Карьера",
 			"progress": {
 				"desktop": "100",
-				"tablet": "90",
-				"mobile": "90"
+				"tablet": "100",
+				"mobile": "100"
 			},
 			"bodyClass": ""
 		},
@@ -135,8 +135,8 @@
 			"name": "Новости подгрузить",
 			"progress": {
 				"desktop": "100",
-				"tablet": "50",
-				"mobile": "50"
+				"tablet": "100",
+				"mobile": "100"
 			},
 			"bodyClass": "",
 			"hidden": true
@@ -152,6 +152,15 @@
 		},
 		"special-offers": {
 			"name": "Специальные предложения",
+			"progress": {
+				"desktop": "100",
+				"tablet": "100",
+				"mobile": "100"
+			},
+			"bodyClass": ""
+		},
+		"page-404": {
+			"name": "404",
 			"progress": {
 				"desktop": "100",
 				"tablet": "100",

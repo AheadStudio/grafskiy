@@ -3,6 +3,17 @@
 /*** //Settings ***/
 
 
+@media screen and (max-width: 1500px)
+	.bcg-icon
+		&--1
+			left 20px
+		&--2
+			right 20px
+		&--3
+			left 20px
+		&--4
+			right 20px
+
 @media screen and (max-width: 1250px)
 	/*** Slider ***/
 	.slider
@@ -45,6 +56,22 @@
 				max-height 200px
 				width auto
 				max-width 100%
+
+	.career-columns
+		flex-flow column-reverse
+
+		.career-col
+			width 100%
+			max-width 100%
+
+			&:first-child
+				max-width 100%
+			&:last-child
+				padding-left 0
+				margin-bottom 20px
+
+	.bcg-icon
+		display none
 	/*** //Restaurant ***/
 
 
@@ -80,6 +107,7 @@
 
 	.fixed-header
 	.menu-open
+
 		.page
 			padding-top 165px
 
@@ -91,6 +119,10 @@
 
 			.header-controls
 				top 9px
+
+	.menu-open
+		overflow hidden
+
 	/*** //Header ***/
 
 
@@ -388,6 +420,11 @@
 			dd
 				line-height 1
 				text-align right
+
+		cite
+			&.huge
+				font-size 30px
+				line-height 35px
 	/*** //Content ***/
 
 	/*** Promo ***/
@@ -457,11 +494,18 @@
 		margin-bottom 25px
 
 	.service-item
-		margin-bottom 50px
+		margin-bottom 60px
 		flex-flow column
+
+		.service-item-price
+			margin-bottom 5px
 
 		.service-item-info
 			width 100%
+			margin-bottom 5px
+
+			.service-item-name
+				margin-bottom 5px
 
 			.service-item-info-inner
 				position inherit
@@ -470,7 +514,7 @@
 				text-align center
 
 				.link
-					margin-top 0
+					margin-top 10px
 
 		.service-item-photo-holder
 			width 100%
@@ -581,9 +625,9 @@
 
 	/*** relaxaction ***/
 	.relaxation
+		margin-top 30px
 		.service-item
-			margin-bottom 80px
-
+			margin-bottom 70px
 	/*** //relaxaction ***/
 
 
@@ -635,10 +679,47 @@
 
 	.news-list
 		grid-template-columns 1fr
+		grid-gap 30px 0
 
-	.news-detail
+	.news-detail-text
 		.page-text
 			padding 0 20px
+
+	.rooms
+		margin-top 30px
+
+		.booking
+			margin 30px 0 30px 0
+
+		.page-heading
+			margin-bottom 35px
+
+		.rooms-text
+			margin-bottom 20px
+
+	.career
+		margin-bottom 40px
+
+	.news-item
+		.news-item-holder
+			margin-bottom 10px
+
+		.news-item-name
+			margin-bottom 5px
+
+		.news-item-date
+			margin-bottom 10px
+
+		.news-item-text
+			max-width 100%
+
+	.news
+		margin-top 0
+		margin-bottom 40px
+
+	.news-detail
+		margin-top 20px
+		margin-bottom 40px
 
 @media screen and (max-width: 800px)
 	/*** Header panel ***/
@@ -935,6 +1016,7 @@
 
 				&--number
 					margin-top -15px
+					font-size 20px
 
 			.booking-schedule-text
 				margin-bottom 15px
@@ -996,6 +1078,27 @@
 				&--textarea
 					font-size 13px
 
+	.load
+		margin-top 40px
+
+	.news-detail
+		.news-detail-text
+			p
+				margin-bottom 15px
+		.news-detail-pagination
+			width 95%
+			box-sizing border-box
+			margin 0 auto
+
+			.news-detail-pagination-prev
+				padding-left 55px
+
+			.news-detail-pagination-next
+				padding-right 55px
+
+			.news-detail-pagination-delimiter
+				margin 0 10px
+
 @media screen and (max-width: 690px)
 	.breakfast
 		.breakfast-photo
@@ -1021,6 +1124,17 @@
 				font-size 24px
 				line-height 35px
 
+	.news-detail
+		p
+			margin-bottom 15px
+
+		.news-detail-pagination
+			padding 0
+
+			.news-detail-pagination-text
+				font-size 12px
+				line-height 18px
+				text-align center
 
 
 @media screen and (max-width: 640px)
@@ -1207,9 +1321,6 @@
 			margin-bottom 15px
 	/*** //Breakfast ***/
 
-
-
-
 @media screen and (max-width: 600px)
 	.location
 		margin-top 40px
@@ -1219,10 +1330,15 @@
 
 		.location-position
 			margin-bottom 40px
+			font-size 18px
 
 		.location-list
 			grid-template-columns 1fr
 			grid-gap 30px 0
+			margin-bottom 40px
+
+		.location-map
+			height 400px
 			margin-bottom 40px
 
 	.location-item
@@ -1243,6 +1359,16 @@
 
 				&:before
 					top 4px
+
+	.page-heading
+		.title-404
+			font-size 80px
+
+		.subtitle-404
+			font-size 30px
+
+	.copyrights
+		margin-top 100px
 
 @media screen and (max-width: 500px)
 	/*** Header ***/
@@ -1286,12 +1412,20 @@
 
 		.booking-title
 			position relative
-			top -25px
+			top -15px
 			max-width 300px
 			white-space normal
 			padding 0
 			text-align center
 
+		.form
+			padding 10px 20px 80px 20px
+
+		.booking-schedule
+			.booking-schedule-text
+				.price
+					&--bold
+						display block
 
 	/*** //Booking ***/
 
@@ -1318,12 +1452,16 @@
 				line-height 25px
 
 		dl
-			grid-template-columns 1fr
+			grid-template-columns 1fr 1fr
+			grid-gap 10px 0
+
 			dt
-				text-align center
+				line-height 20px
+				text-align left
 			dd
-				padding-bottom 15px
-				text-align center
+				padding-bottom 0
+				line-height 20px
+				text-align left
 
 	.booking-price-colums
 		.booking-price-col
@@ -1334,6 +1472,71 @@
 			.booking-price-time
 				max-width 155px
 				font-size 16px
-	.booking
-		.form
-			padding 10px 20px 80px 20px
+
+	.rooms
+		.service-item
+			.service-item-info
+				.service-item-info-inner
+					padding 0
+
+	.booking-contacts
+		margin-top 0
+
+	.booking-price
+		margin 40px auto 40px auto
+
+		.link
+			width 100%
+			max-width 147px
+			margin-top 30px
+
+	.accordion
+		.accordion-item
+			.accordion-content
+				padding 20px 15px 40px 15px
+
+			.btn
+				font-size 14px
+				margin-top 20px
+				padding 10px
+
+	.news-item
+		.news-item-name
+			font-size 20px
+
+		.news-item-text
+			line-height 22px
+			font-size 16px
+
+
+	.news-detail
+		.news-detail-pagination
+
+			.news-detail-pagination-prev
+				padding-left 30px
+
+				&:before
+					left 5px
+					width 30px
+					height 10px
+
+			.news-detail-pagination-next
+				padding-right 30px
+
+				&:after
+					right 5px
+					width 30px
+					height 10px
+
+	.page-heading
+		.title-404
+			margin-top 40px
+
+		.subtitle-404
+			font-size 24px
+
+		.back-404
+			font-size 14px
+
+	.copyrights
+		margin-top 50px

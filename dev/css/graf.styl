@@ -119,6 +119,9 @@ body
 	&--w3
 		max-width 820px
 
+	&--bcg
+		max-width 1400px
+
 	&--cleared
 		clearfix()
 
@@ -208,6 +211,14 @@ body
 			border-bottom-color #A16849
 
 			color #A16849
+
+	&--gray
+		border-bottom 1px solid #a6b9b5
+		transition border-bottom 0.3s $transitionAnimation
+		color #34776e
+		&:hover
+			border-bottom-color transparent
+
 
 .btn
 	box-sizing border-box
@@ -321,6 +332,7 @@ body
 			line-height 26px
 			padding-bottom 10px
 			font-family "GeoSlab712LightItalic"
+			white-space nowrap
 			&:last-child
 				margin-bottom 0
 
@@ -553,6 +565,28 @@ body
 		line-height 76px
 		letter-spacing 9px
 		text-transform uppercase
+
+	.title-404
+		margin-top 70px
+		font-size 135px
+		line-height 1
+		color #346E6A
+		text-transform uppercase
+
+	.subtitle-404
+		font-size 38px
+		margin-top 10px
+		text-transform uppercase
+		letter-spacing 5px
+
+	.back-404
+		margin-top 15px
+		font-size 17px
+		font-family "GeoSlb712BoldCBT"
+		font-weight 600
+		line-height 1
+
+
 /*** //Header ***/
 
 
@@ -696,6 +730,7 @@ body
 			text-transform uppercase
 
 .menu-open
+	overflow hidden
 	.header-panel
 		opacity 1
 
@@ -2152,7 +2187,7 @@ body
 
 			&:first-child
 				padding-left 0
-				
+
 			&:last-child
 				border-right 0
 
@@ -2266,6 +2301,7 @@ body
 		display grid
 		margin-bottom 115px
 		grid-template-columns: 1fr 1fr 1fr 1fr
+		grid-gap 0 10px
 		width 100%
 
 	.location-map
@@ -2450,11 +2486,14 @@ body
 			border-bottom 1px solid #346e6b
 
 	.accordion-header
+		position relative
+
 		display flex
 		justify-content space-between
+
 		padding 22px 0
 		box-sizing border-box
-		position relative
+
 		cursor pointer
 
 		.accordion-post
@@ -2468,12 +2507,16 @@ body
 				position absolute
 				top 10px
 				left 4px
+
 				display block
 				width 17px
 				height 13px
+
 				background-image url("../svg/arrow.svg")
 				background-repeat no-repeat
 				background-size contain
+
+				transition transform 0.3s $transitionAnimation
 
 		.accordion-wage
 			&--empty
@@ -2518,6 +2561,11 @@ body
 			border-bottom-color transparent
 			.accordion-content
 				display block
+
+			.accordion-header
+				.accordion-post
+					&:before
+						transform rotate(90deg)
 
 		&.show-content
 			.accordion-content
@@ -2639,10 +2687,11 @@ body
 
 
 .news-detail
-	margin-bottom 160px
+	margin-top 50px
+	margin-bottom 83px
 
 	.news-date
-		margin 50px  auto 0 auto
+		margin 0 auto
 		font-size 16px
 		text-align center
 
@@ -2650,7 +2699,7 @@ body
 	.page-heading
 		margin 23px 0
 
-	.news-detail
+	.news-detail-text
 		p
 			margin-bottom 30px
 
@@ -2658,7 +2707,6 @@ body
 		display flex
 		justify-content space-between
 		align-items center
-		margin-top 90px
 		padding 27px 0
 		border-top 1px solid black
 		border-bottom 1px solid black
@@ -2729,3 +2777,39 @@ body
 			background #000
 
 /*** //news ***/
+
+.copyrights
+	display block
+	text-align center
+	margin-top 205px
+	font-size 10px
+
+
+.bcg-icon
+	position absolute
+	max-width 185px
+	transition transform 0.3s $transitionAnimation
+
+	img
+		display block
+		width 100%
+
+	&--1
+		top 440px
+		left 10%
+		transform translateY(0)
+
+	&--2
+		top 610px
+		right 10%
+		transform translateY(0)
+
+	&--3
+		top 1740px
+		left 10%
+		transform translateY(0)
+
+	&--4
+		top 550px
+		right 10%
+		transform translateY(0)

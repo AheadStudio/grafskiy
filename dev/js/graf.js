@@ -73,6 +73,7 @@
 						var self = this;
 
 						self.$panel.css("display", "block");
+						$sel.html.css("overflow", "hidden");
 						setTimeout(function() {
 							$sel.body.addClass("menu-open");
 							self.isOpen = true;
@@ -83,6 +84,7 @@
 						var self = this;
 
 						$sel.body.removeClass("menu-open");
+						$sel.html.css("overflow", "auto");
 						setTimeout(function() {
 							self.$panel.css("display", "none");
 							self.isOpen = false;
@@ -356,7 +358,7 @@
 									var $data = $(data).addClass("load-events-item");
 										$container.append($data);
 									setTimeout(function() {
-										GRAF.common.go($container.find(".load-events-item").offset().top-150, 600);
+										GRAF.common.go($container.find(".load-events-item").offset().top-90, 600);
 										$container.find(".load-events-item").removeClass("load-events-item");
 										$linkAddress.removeClass("loading");
 									}, 600);
@@ -414,13 +416,51 @@
 					init: function() {
 						var self = this;
 
-						self.placeholder();
 					},
 
-					placeholder: function() {
-						$("textarea").attr("placeholder", "Сообщение" + "\n" + "напишите свое сообщение");
-					},
+				},
 
+				transformIcons: function() {
+					var self = this,
+						counter = $(window).scrollTop();
+
+					$sel.window.scroll(function() {
+						var top  = $(window).scrollTop(),
+							$icon = $(".bcg-icon");
+
+						if (top >= counter) {
+
+							var randomTransition = Math.floor(Math.random() * 50) + 1;
+
+							$icon.each(function() {
+								(function(i) {
+									i.css("transform", "translateY(-"+randomTransition+"px)");
+								})($(this));
+							});
+							counter = top;
+
+						} else {
+							var randomTransition = Math.floor(Math.random() * 50) + 1;
+
+							$icon.each(function() {
+								(function(i) {
+									i.css("transform", "translateY("+randomTransition+"px)");
+								})($(this));
+							});
+							counter = top;
+
+						}
+
+
+						if($(window).scrollTop() == 0) {
+							$icon.each(function() {
+								(function(i) {
+									i.css("transform", "translateY(0px)");
+								})($(this));
+							});
+							return;
+					   	}
+					});
 				}
 
 			},
@@ -438,7 +478,7 @@
 
 	GRAF.page.accordion.init();
 	GRAF.page.ajaxLoader();
-	GRAF.page.form.init();
+	GRAF.page.transformIcons();
 
 	GRAF.reload = function() {
 		GRAF.maps.init();
