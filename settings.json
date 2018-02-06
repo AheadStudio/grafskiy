@@ -95,6 +95,15 @@
 			},
 			"bodyClass": ""
 		},
+		"room_tpl_photo": {
+			"name": "Номер c фото",
+			"progress": {
+				"desktop": "100",
+				"tablet": "100",
+				"mobile": "100"
+			},
+			"bodyClass": ""
+		},
 		"contacts": {
 			"name": "Контакты",
 			"progress": {
