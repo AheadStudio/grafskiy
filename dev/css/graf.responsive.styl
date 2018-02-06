@@ -513,11 +513,33 @@
 				transform translate(0)
 				text-align center
 
+				.service-item-description
+					p
+						text-align left
+
 				.link
 					margin-top 10px
 
 		.service-item-photo-holder
 			width 100%
+
+			&--mobile
+				display block
+				width 100%
+
+			&--hide
+				display none
+
+		.service-item-slider-holder
+			width 100%
+
+			&--mobile
+				display block
+				width 100%
+				margin-bottom 50px
+
+			&--hide
+				display none
 
 	.service-slider
 		.service-slider-nav
@@ -627,7 +649,7 @@
 	.relaxation
 		margin-top 30px
 		.service-item
-			margin-bottom 70px
+			margin-bottom 30px
 	/*** //relaxaction ***/
 
 
@@ -643,7 +665,17 @@
 	.photos
 		.photo-item
 			.photo-item-title
+				margin-bottom 10px
 				text-align center
+
+			.photo-item-img
+
+				&--mobile
+					display block
+					margin 0 auto
+
+				&--hide
+					display none
 	/***  //photos  ***/
 
 
@@ -701,20 +733,30 @@
 		margin-bottom 40px
 
 	.news-item
+		display grid
+
 		.news-item-holder
+			order 1
 			margin-bottom 10px
 
 		.news-item-name
+			order 0
 			margin-bottom 5px
 
 		.news-item-date
+			order 2
 			margin-bottom 10px
 
 		.news-item-text
+			order 3
 			max-width 100%
 
+		.news-item-link
+			order 4
+			margin-top 0
+
 	.news
-		margin-top 0
+		margin-top 25px
 		margin-bottom 40px
 
 	.news-detail
@@ -894,7 +936,7 @@
 			height 65px
 
 		.booking-inner
-			padding 30px 20px 65px 20px
+			padding 25px 10px 55px 10px
 
 		.booking-description
 			margin-bottom 5px
@@ -911,7 +953,6 @@
 
 	/*** Promo ***/
 	.promo
-		padding-bottom 30px
 
 		.promo-item
 			.promo-item-description
@@ -922,14 +963,14 @@
 				text-align center
 
 		.promo-nav
-			bottom 10px
+			bottom -15px
 
 			.promo-nav-counter
 				font-size 16px
 
 		&--nodescr
 			.promo-nav
-				bottom 5px
+				bottom 0
 	/*** //Promo ***/
 
 	/*** Slider ***/
@@ -1029,7 +1070,7 @@
 		.booking-grid
 			&--col3
 				grid-template-columns 1fr
-				grid-gap 20px 0
+				grid-gap 15px 0
 			&--col2
 				grid-template-columns 1fr
 	/*** //pool ***/
@@ -1131,10 +1172,17 @@
 		.news-detail-pagination
 			padding 0
 
-			.news-detail-pagination-text
-				font-size 12px
-				line-height 18px
-				text-align center
+			.news-detail-pagination
+				&-prev
+					.news-detail-pagination-text
+						font-size 10px
+						line-height 14px
+						text-align left
+				&-next
+					.news-detail-pagination-text
+						font-size 10px
+						line-height 14px
+						text-align right
 
 
 @media screen and (max-width: 640px)
@@ -1329,6 +1377,8 @@
 				flex-flow column
 
 		.location-position
+			padding 0 20px
+			box-sizing border-box
 			margin-bottom 40px
 			font-size 18px
 
@@ -1408,6 +1458,8 @@
 		.booking-contacts
 			.booking-contacts-phone
 			.booking-contacts-email
+				width 100%
+				word-wrap break-word
 				font-size 18px
 
 		.booking-title
@@ -1440,8 +1492,6 @@
 			img
 				margin-bottom 5px
 
-			.photo-item-description
-				text-align center
 
 	/*** //photos ***/
 
@@ -1496,24 +1546,27 @@
 				padding 20px 15px 40px 15px
 
 			.btn
-				font-size 14px
+				padding 10px 20px
+				font-size 16px
 				margin-top 20px
-				padding 10px
 
 	.news-item
 		.news-item-name
-			font-size 20px
+			font-size 16px
 
 		.news-item-text
 			line-height 22px
-			font-size 16px
+			font-size 14px
 
+		.news-item-date
+			font-size 12px
+			margin-bottom 5px
 
 	.news-detail
 		.news-detail-pagination
 
 			.news-detail-pagination-prev
-				padding-left 30px
+				padding-left 38px
 
 				&:before
 					left 5px
@@ -1521,7 +1574,7 @@
 					height 10px
 
 			.news-detail-pagination-next
-				padding-right 30px
+				padding-right 38px
 
 				&:after
 					right 5px

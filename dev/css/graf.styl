@@ -364,6 +364,7 @@ body
 	&--pool
 		grid-template-areas "area1 area2" "area3 area2" "area3 area4"
 
+
 	.photo-item
 		margin-bottom 10%
 
@@ -381,12 +382,6 @@ body
 		&.photo-item--four
 			grid-area area4
 
-		img
-			margin 0 auto 45px auto
-
-			display block
-			width 100%
-			height auto
 
 		.photo-item-title
 			margin-bottom 15px
@@ -394,6 +389,21 @@ body
 			font-size 18px
 			text-transform uppercase
 			letter-spacing 4px
+
+		.photo-item-img
+			margin 0 auto 45px auto
+
+			display block
+			width 100%
+			height auto
+
+			&--mobile
+				display none
+				margin 0 auto 10px auto
+
+		img
+			width 100%
+			display block
 
 	.sizer
 		width 45%
@@ -1909,7 +1919,8 @@ body
 					width 12px
 					height 18px
 					background-repeat no-repeat
-					background-image url("../i/rub.png")
+					background-image url("../svg/rub.svg")
+					background-size contain
 					vertical-align middle
 
 		.booking-schedule-subtitle
@@ -1966,9 +1977,15 @@ body
 			display block
 			padding-top 69%
 
+		&--mobile
+			display none
+
 	.service-item-slider-holder
 		position relative
 		width 60%
+
+		&--mobile
+			display none
 
 	.service-slider
 		cursor pointer
@@ -2718,8 +2735,8 @@ body
 		justify-content space-between
 		align-items center
 		padding 27px 0
-		border-top 1px solid black
-		border-bottom 1px solid black
+		border-top 0.5px solid #336E6A
+		border-bottom 0.5px solid #336E6A
 
 		.news-detail-pagination-prev
 		.news-detail-pagination-next
@@ -2784,7 +2801,7 @@ body
 			display block
 			height 85px
 			width 1px
-			background #000
+			background #336E6A
 
 /*** //news ***/
 
