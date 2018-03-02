@@ -591,7 +591,7 @@ body
 
 	.back-404
 		margin-top 15px
-		font-size 17px
+		font-size 18px
 		font-family "GeoSlb712BoldCBT"
 		line-height 1
 
@@ -1077,7 +1077,6 @@ body
 
 		.header-controls
 			position relative
-			top 20px
 
 	&--show
 		.page-header
@@ -1352,10 +1351,11 @@ body
 		width 100%
 
 	.invalid-item
-		.invalid-item-photo-holder
-			float left
+		display flex
+		align-items center
 
-			width 48%
+		.invalid-item-photo-holder
+			width 50%
 
 			img
 				display block
@@ -1363,7 +1363,10 @@ body
 				height auto
 
 		.invalid-item-info
-			padding-left 52%
+			width 50%
+			padding-left 5%
+			box-sizing border-box
+
 
 		.invalid-item-icon
 			margin-bottom 20px
@@ -1911,16 +1914,6 @@ body
 
 				&--bold
 					font-weight 600
-
-				&:after
-					content ""
-					display inline-block
-					width 12px
-					height 18px
-					background-repeat no-repeat
-					background-image url("../svg/rub.svg")
-					background-size contain
-					vertical-align middle
 
 		.booking-schedule-subtitle
 			margin-bottom 10px
@@ -2615,10 +2608,6 @@ body
 .news-item
 	display block
 
-	&.load-events-item
-		animation popUp 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards
-
-
 	.news-item-holder
 		display block
 		width 100%
@@ -2808,7 +2797,7 @@ body
 	display block
 	text-align center
 	margin-top 205px
-	font-size 10px
+	font-size 14px
 
 
 .bcg-icon
