@@ -491,6 +491,9 @@
 		margin-bottom 60px
 		flex-flow column-reverse
 
+		&:nth-child(2n)
+			flex-flow column-reverse
+			
 		.service-item-price
 			margin-bottom 5px
 
@@ -499,7 +502,12 @@
 			margin-top 55px
 
 			.service-item-name
-				margin-bottom 5px
+				&--mobile
+					display block
+					margin-bottom 15px
+
+				&--desktop
+					display none
 
 			.service-item-info-inner
 				position inherit
